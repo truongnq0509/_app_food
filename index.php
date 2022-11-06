@@ -10,7 +10,7 @@
     require "./controllers/$controllerName.php";
     $actionName();
 
-    echo 'abc';
+    echo '123345';
     ?>
 </body>
 
