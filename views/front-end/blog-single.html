@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from d-themes.com/html/panda/blog-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 08:35:32 GMT -->
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <title>Panda - Ultimate eCommerce Template</title>
+
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Panda - Ultimate eCommerce Template">
+    <meta name="author" content="D-THEMES">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
+    <!-- Preload Font -->
+
+    <link rel="preload" href="vendor/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
+    <link rel="preload" href="vendor/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
+
+    <script>
+        WebFontConfig = {
+            google: { families: [ 'Josefin Sans:300,400,500,600,700' ] }
+        };
+        ( function ( d ) {
+            var wf = d.createElement( 'script' ), s = d.scripts[ 0 ];
+            wf.src = 'js/webfont.js';
+            wf.async = true;
+            s.parentNode.insertBefore( wf, s );
+        } )( document );
+    </script>
+
+
+    <link rel="stylesheet" type="text/css" href="vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.min.css">
+
+    <!-- Plugin CSS File -->
+    <link rel="stylesheet" type="text/css" href="vendor/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/magnific-popup/magnific-popup.min.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    
+                </div>
+            </div>
+            <!-- End HeaderTop -->
+            <div class="header-middle has-center sticky-header fix-top sticky-content">
+                <div class="container">
+                    <div class="header-left">
+                        <a href="#" class="mobile-menu-toggle" title="Mobile Menu">
+                            <i class="p-icon-bars-solid"></i>
+                        </a>
+                        <a href="home.html" class="logo">
+                            <img src="images/logo.png" alt="logo" width="171" height="41">
+                        </a>
+                        <!-- End of Divider -->
+                    </div>
+                    <div class="header-center">
+                        <nav class="main-nav">
+                            <ul class="menu">
+                                <li class="active">
+                                    <a href="home.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="shop.html">Shop</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="blog.html">Blog</a>
+                                    
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="header-right">
+                        <div class="header-search hs-toggle">
+                            <a class="search-toggle" href="#" title="Search">
+                                <i class="p-icon-search-solid"></i>
+                            </a>
+                            <form action="#" class="form-simple">
+                                <input type="search" autocomplete="off" placeholder="Search in..." required>
+                                <button class="btn btn-search" type="submit">
+                                    <i class="p-icon-search-solid"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="dropdown login-dropdown off-canvas">
+                            <a class="login-toggle" href="ajax/login.html" data-toggle="login-modal">
+                                <span class="sr-only">login</span>
+                                <i class="p-icon-user-solid"></i>
+                            </a>
+                            <!-- End Login Toggle -->
+                            <div class="canvas-overlay"></div>
+                            <a href="#" class="btn-close"></a>
+                            <div class="dropdown-box scrollable">
+                                <div class="login-popup">
+                                    <div class="form-box">
+                                        <div class="tab tab-nav-underline tab-nav-boxed">
+                                            <ul class="nav nav-tabs nav-fill mb-4">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active lh-1 ls-normal" href="#signin">Login</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link lh-1 ls-normal" href="#register">Register</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="signin">
+                                                    <form action="#">
+                                                        <div class="form-group">
+                                                            <input type="text" id="singin-email" name="singin-email"
+                                                                placeholder="Username or Email Address" required="">
+                                                            <input type="password" id="singin-password"
+                                                                name="singin-password" placeholder="Password"
+                                                                required="">
+                                                        </div>
+                                                        <div class="form-footer">
+                                                            <div class="form-checkbox">
+                                                                <input type="checkbox" id="signin-remember"
+                                                                    name="signin-remember">
+                                                                <label for="signin-remember">Remember
+                                                                    me</label>
+                                                            </div>
+                                                            <a href="#" class="lost-link">Lost your password?</a>
+                                                        </div>
+                                                        <button class="btn btn-dark btn-block"
+                                                            type="submit">Login</button>
+                                                    </form>
+                                                    <div class="form-choice text-center">
+                                                        <label>or Login With</label>
+                                                        <div class="social-links social-link-active ">
+                                                            <a href="#" title="Facebook"
+                                                                class="social-link social-facebook fab fa-facebook-f"></a>
+                                                            <a href="#" title="Twitter"
+                                                                class="social-link social-twitter fab fa-twitter"></a>
+                                                            <a href="#" title="Linkedin"
+                                                                class="social-link social-linkedin fab fa-linkedin-in"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="register">
+                                                    <form action="#">
+                                                        <div class="form-group">
+                                                            <input type="text" id="register-user" name="register-user"
+                                                                placeholder="Username" required="">
+                                                            <input type="email" id="register-email"
+                                                                name="register-email" placeholder="Your Email Address"
+                                                                required="">
+                                                            <input type="password" id="register-password"
+                                                                name="register-password" placeholder="Password"
+                                                                required="">
+                                                        </div>
+                                                        <div class="form-footer mb-5">
+                                                            <div class="form-checkbox">
+                                                                <input type="checkbox" id="register-agree"
+                                                                    name="register-agree" required="">
+                                                                <label for="register-agree">I
+                                                                    agree to the
+                                                                    privacy policy</label>
+                                                            </div>
+                                                        </div>
+                                                        <button class="btn btn-dark btn-block"
+                                                            type="submit">Register</button>
+                                                    </form>
+                                                    <div class="form-choice text-center">
+                                                        <label class="ls-m">or Register With</label>
+                                                        <div class="social-links social-link-active ">
+                                                            <a href="#" title="Facebook"
+                                                                class="social-link social-facebook fab fa-facebook-f"></a>
+                                                            <a href="#" title="Twitter"
+                                                                class="social-link social-twitter fab fa-twitter"></a>
+                                                            <a href="#" title="Linkedin"
+                                                                class="social-link social-linkedin fab fa-linkedin-in"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button title="Close (Esc)" type="button" class="mfp-close"><span>×</span></button>
+                                </div>
+                            </div>
+                            <!-- End Dropdown Box -->
+                        </div>
+                     
+                        <div class="dropdown cart-dropdown off-canvas mr-0 mr-lg-2">
+                            <a href="#" class="cart-toggle link">
+                                <i class="p-icon-cart-solid">
+                                    <span class="cart-count">2</span>
+                                </i>
+                            </a>
+                            <div class="canvas-overlay"></div>
+                            <div class="dropdown-box">
+                                <div class="canvas-header">
+                                    <h4 class="canvas-title">Shopping Cart</h4>
+                                    <a href="#" class="btn btn-dark btn-link btn-close">close<i
+                                            class="p-icon-arrow-long-right"></i><span class="sr-only">Cart</span></a>
+                                </div>
+                                <div class="products scrollable">
+                                    <div class="product product-mini">
+                                        <figure class="product-media">
+                                            <a href="product-simple.html">
+                                                <img src="images/cart/product-1.jpg" alt="product" width="84"
+                                                    height="105" />
+                                            </a>
+                                            <a href="#" title="Remove Product" class="btn-remove">
+                                                <i class="p-icon-times"></i><span class="sr-only">Close</span>
+                                            </a>
+                                        </figure>
+                                        <div class="product-detail">
+                                            <a href="product.html" class="product-name">Peanuts</a>
+                                            <div class="price-box">
+                                                <span class="product-quantity">7</span>
+                                                <span class="product-price">$12.00</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- End of Cart Product -->
+                                    <div class="product product-mini">
+                                        <figure class="product-media">
+                                            <a href="product-simple.html">
+                                                <img src="images/cart/product-2.jpg" alt="product" width="84"
+                                                    height="105" />
+                                            </a>
+                                            <a href="#" title="Remove Product" class="btn-remove">
+                                                <i class="p-icon-times"></i><span class="sr-only">Close</span>
+                                            </a>
+                                        </figure>
+                                        <div class="product-detail">
+                                            <a href="product.html" class="product-name">Prime Beef</a>
+                                            <div class="price-box">
+                                                <span class="product-quantity">4</span>
+                                                <span class="product-price">$16.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Cart Product -->
+                                </div>
+                                <!-- End of Products  -->
+                                <div class="cart-total">
+                                    <label>Subtotal:</label>
+                                    <span class="price">$148.00</span>
+                                </div>
+                                <!-- End of Cart Total -->
+                                <div class="cart-action">
+                                    <a href="cart.html" class="btn btn-outline btn-dim mb-2">View
+                                        Cart</a>
+                                    <a href="checkout.html" class="btn btn-dim"><span>Go To Checkout</span></a>
+                                </div>
+                                <!-- End of Cart Action -->
+                            </div>
+                            <!-- End Dropdown Box -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+        <main class="main">
+            <div class="page-header" style="background-color: #fff7ec">
+                <h1 class="page-title">Single Post</h1>
+            </div>
+            <nav class="breadcrumb-nav">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="demo1.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li>Single Post</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="page-content">
+                <div class="container mb-10 pb-6">
+                    <div class="row">
+                        <div class="col-lg-9 pr-lg-6">
+                            <div class="posts">
+                                <article class="post post-single">
+                                    <figure class="post-media">
+                                        <a href="#">
+                                            <img src="images/blog/5-905x500.jpg" width="905" height="500" alt="post" />
+                                        </a>
+                                    </figure>
+                                    <div class="post-details mt-6">
+                                        <div class="post-meta">
+                                            by
+                                            <a href="#" title="Posts by John Doe" class="text-uppercase ml-1 mr-1"
+                                                rel="author">John
+                                                Doe </a>
+                                            on
+                                            <span class="post-date ml-1"><a href="#"> JUN 14, 2021</a></span>
+                                            <span class="divider mr-2 ml-2"></span>
+                                            in
+                                            <div class="ml-1 mb-0">
+                                                <a href="#" rel="category tag">FRUITS</a>,
+                                                <a href="#" rel="category tag">GRAPES</a>
+                                            </div>
+                                            <span class="divider mr-2 ml-2"></span>
+                                            <i class="far fa-comment-alt mr-2"></i>
+                                            <a href="#post-comments"
+                                                class="comments-link hash-scroll font-weight-light">
+                                                <mark>2</mark>
+                                                Comments</a>
+                                        </div>
+                                        <h4 class="post-title">Grocery of high nutrition and plenty of
+                                            vitamins</h4>
+                                        <p>There are many variations of passages of Lorem Ipsum
+                                            available, but the majority have suffered alteration in some form believable
+                                            by injected humour, or randomised words which don't look even slightly
+                                            believable generators If you a passage.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et goingie dolore magna aliqua Venenatis tellus
+                                            in metus vulputate eu scelerisque felis. Vel pretium lectus quam id leo in
+                                            vitae turpis massa. Nunc id cursus tincidunt metus aliquam. Libero id
+                                            faucibus nisl tincidunt eget.
+                                        </p>
+                                        <blockquote class="testimonial">
+                                            <p>Morbi purus libero faucibus adipiscing commodo quis gravida hendrerit
+                                                semper Praesent elementum hendrerit tortor sed semper to lorem at felis
+                                                vesti faucibus a ultrices sagittis, mi neque euismod.</p><cite>Jelly
+                                                Cristiana</cite>
+                                        </blockquote>
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                            veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                        <div class="banner-wrapper row cols-sm-2 align-items-center mt-md-9 mb-md-6">
+                                            <figure><img src="images/blog/blog-single-2.jpg" width="400" height="414"
+                                                    alt="post" />
+                                            </figure>
+                                            <div class="banner-desc pl-xl-2 pl-5">
+                                                <h2 class="title">How do we get started work?</h2>
+                                                <p>Lorem ipsum dolor sit amet a consectetur adipiscing elit eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua enenatis tell us
+                                                    in metus vulputate eu.</p>
+                                                <ul class="list list-circle">
+                                                    <li><i class="far fa-circle"></i>Nunc id cursus metus aliquam.</li>
+                                                    <li><i class="far fa-circle"></i>Vel pretium lectus quam id leo in
+                                                        vitae turpis massa.
+                                                    </li>
+                                                    <li><i class="far fa-circle"></i>Eget sit amet tellus cras
+                                                        adipiscing enim eu.
+                                                    </li>
+                                                    <li><i class="far fa-circle"></i>Tellus rutrum tellus pellentesque
+                                                        eu tincidunt tortor.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- End Post -->
+                                <div class="related-posts pb-md-4">
+                                    <h2 class="title title-line title-underline mb-6"><span>Related Posts</span></h2>
+                                    <div class="owl-carousel owl-theme owl-nav-top row cols-md-2 cols-1"
+                                        data-owl-options="{
+                                                    'nav': true, 
+                                                    'dots': false, 
+                                                    'margin': 30,
+                                                    'responsive': {
+                                                        '0': {
+                                                            'items': 1
+                                                        },
+                                                        '768': {
+                                                            'items': 2
+                                                        }
+                                                    }
+                                                }">
+                                        <article class="post post-border post-classic post-classic-sm overlay-zoom">
+                                            <figure class="post-media">
+                                                <a href="#">
+                                                    <img src="images/blog/1-438x274.jpg" width="438" height="274"
+                                                        alt="post" />
+                                                </a>
+                                            </figure>
+                                            <div class="post-details text-center">
+                                                <div class="post-calendar">
+                                                    18 February 2021
+                                                </div>
+                                                <h4 class="post-title"><a href="#">New Trends In 2021</a></h4>
+                                                <p class="post-content">Lorem ipsum dolor sit amet,onadipis sedsd do
+                                                    sedsd doeiu smod tempo...
+                                                </p>
+                                                <a href="#" class="btn btn-outline btn-dark">Read more
+                                                </a>
+                                            </div>
+                                        </article>
+                                        <article class="post post-border post-classic post-classic-sm overlay-zoom">
+                                            <figure class="post-media">
+                                                <a href="#">
+                                                    <img src="images/blog/3-438x274.jpg" width="438" height="274"
+                                                        alt="post" />
+                                                </a>
+                                            </figure>
+                                            <div class="post-details text-center">
+                                                <div class="post-calendar">
+                                                    24 July 2021
+                                                </div>
+                                                <h4 class="post-title"><a href="#">20% Off Coupon for Cyber</a></h4>
+                                                <p class="post-content">Lorem ipsum dolor sit amet,onadipis sedsd do
+                                                    sedsd doeiu smod tempo...
+                                                </p>
+                                                <a href="#" class="btn btn-outline btn-dark">Read more
+                                                </a>
+                                            </div>
+                                        </article>
+                                        <article class="post post-border post-classic post-classic-sm overlay-zoom">
+                                            <figure class="post-media">
+                                                <a href="#">
+                                                    <img src="images/blog/4-438x274.jpg" width="438" height="274"
+                                                        alt="post" />
+                                                </a>
+                                            </figure>
+                                            <div class="post-details text-center">
+                                                <div class="post-calendar">
+                                                    4 August 2021
+                                                </div>
+                                                <h4 class="post-title"><a href="#">Wine Production</a></h4>
+                                                <p class="post-content">Lorem ipsum dolor sit amet,onadipis sedsd do
+                                                    sedsd doeiu smod tempo...
+                                                </p>
+                                                <a href="#" class="btn btn-outline btn-dark">Read more
+                                                </a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <!-- End Related Posts -->
+                                <div class="comments border-no mb-10 pt-0 pb-2" id="post-comments">
+                                    <h2 class="title title-line title-underline"><span>3 Comments</span></h2>
+                                    <ul>
+                                        <li>
+                                            <div class="comment">
+                                                <figure class="comment-media">
+                                                    <a href="#">
+                                                        <img src="images/client/client2.jpg" width="100" height="100"
+                                                            alt="avatar">
+                                                    </a>
+                                                </figure>
+                                                <div class="comment-body">
+                                                    <div class="comment-user">
+                                                        <h4><a href="#">Steve Jhonson</a></h4>
+                                                        <span class="comment-date">July 14, 2021 at 6:10 PM</span>
+                                                    </div>
+
+                                                    <div class="comment-content mb-2">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore
+                                                            magna aliqua. Venenatis tellus in metus enenatis tellus in
+                                                            metus </p>
+                                                    </div>
+                                                    <a href="#" class="btn btn-link btn-reveal-right btn-reply">REPLY<i
+                                                            class="p-icon-arrow-long-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <div class="comment">
+                                                        <figure class="comment-media">
+                                                            <a href="#">
+                                                                <img src="images/client/client3.jpg" width="100"
+                                                                    height="100" alt="avatar">
+                                                            </a>
+                                                        </figure>
+                                                        <div class="comment-body">
+                                                            <div class="comment-user">
+                                                                <h4><a href="#">Semi Colon</a></h4>
+                                                                <span class="comment-date">July 14, 2021 at 6:10
+                                                                    PM</span>
+                                                            </div>
+
+                                                            <div class="comment-content mb-2">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                                    elit, sed do eiusmod tempor incididunt ut labore</p>
+                                                            </div>
+                                                            <a href="#"
+                                                                class="btn btn-link btn-reveal-right btn-reply">REPLY<i
+                                                                    class="p-icon-arrow-long-right"></i></a>
+                                                        </div>
+                                                    </div>
+
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="comment">
+                                                <figure class="comment-media">
+                                                    <a href="#">
+                                                        <img src="images/client/client4.jpg" width="100" height="100"
+                                                            alt="avatar">
+                                                    </a>
+                                                </figure>
+                                                <div class="comment-body">
+                                                    <div class="comment-user">
+                                                        <h4><a href="#">Jon Anda</a></h4>
+                                                        <span class="comment-date">July 14, 2021 at 6:10 PM</span>
+                                                    </div>
+
+                                                    <div class="comment-content mb-2">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore
+                                                            magna aliqua. Venenatis tellus in metus enenatis tellus in
+                                                            metus </p>
+                                                    </div>
+                                                    <a href="#" class="btn btn-link btn-reveal-right btn-reply">REPLY<i
+                                                            class="p-icon-arrow-long-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End Comments -->
+                                <div class="reply pb-4">
+                                    <h3 class="title title-simple text-left text-normal">Write a Comments</h3>
+                                    <p>Your email address will not be published. Required fields are marked*</p>
+
+                                    <form action="#">
+                                        <div class="row gutter-lg mb-md-2">
+                                            <div class="col-md-6 mb-5">
+                                                <label>Your name*</label>
+                                                <input type="text" id="reply-name" name="reply-name"
+                                                    placeholder="Enter your name" required="">
+                                            </div>
+                                            <div class="col-md-6 mb-5">
+                                                <label>Your email address*</label>
+                                                <input type="email" id="reply-email" name="reply-email"
+                                                    placeholder="Enter your email" required="">
+                                            </div>
+                                        </div>
+                                        <label>Your comment*</label>
+                                        <textarea id="reply-message" cols="30" rows="5" class="mb-6"
+                                            placeholder="Enter your comment" required=""></textarea>
+                                        <button type="submit" class="btn btn-dim">POST COMMENT<i
+                                                class="d-icon-arrow-right"></i></button>
+                                    </form>
+                                </div>
+                                <!-- End Reply -->
+                            </div>
+                            <!-- End Posts -->
+                        </div>
+                        <aside class="col-lg-3 right-sidebar sidebar-fixed sticky-sidebar-wrapper">
+                            <div class="sidebar-overlay">
+                            </div>
+                            <a class="sidebar-close" href="#"><i class="p-icon-times"></i></a>
+                            <a href="#" class="sidebar-toggle"><i class="fas fa-chevron-left"></i></a>
+                            <div class="sidebar-content">
+                                <div class="sticky-sidebar"
+                                    data-sticky-options="{'paddingOffsetTop': 89, 'paddingOffsetBottom': 20}">
+                                    <div class="widget widget-search border-no mb-9">
+                                        <form action="#" class="form-simple">
+                                            <input type="text" name="search" autocomplete="off"
+                                                placeholder="Enter your keywords..." required />
+                                            <button class="btn btn-search btn-link" type="submit">
+                                                <i class="p-icon-search-solid"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="widget widget-sidebar widget-collapsible border-no">
+                                        <h3 class="widget-title title-underline"><span
+                                                class="title-text">Categories</span></h3>
+                                        <ul class="widget-body filter-items search-ul">
+                                            <li><a href="shop.html">Vegetables (5)</a></li>
+                                            <li><a href="shop.html">Fruits (3)</a></li>
+                                            <li><a href="shop.html">Snack (12)</a></li>
+                                            <li><a href="shop.html">Daily Needs (0)</a></li>
+                                            <li><a href="shop.html">Drinks (6)</a></li>
+                                            <li><a href="shop.html">Honey (0)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="widget widget-sidebar">
+                                        <h3 class="widget-title title-underline"><span class="title-text">Recent
+                                                Posts</span></h3>
+                                        <div class="widget-body pt-6 pb-4">
+                                            <div class="owl-carousel owl-nav-top"
+                                                data-owl-options="{'items': 1, 'nav': true, 'dots': false, 'loop': true}">
+                                                <div class="post-col">
+                                                    <div class="post post-list-sm">
+                                                        <figure class="post-media">
+                                                            <a href="blog-single.html">
+                                                                <img src="images/blog/2-150x150.jpg" width="85"
+                                                                    height="85" alt="post" />
+                                                            </a>
+                                                        </figure>
+                                                        <div class="post-details">
+                                                            <div class="post-meta">
+                                                                <a href="blog-single.html" class="post-date">MAY 11,
+                                                                    2021</a>
+                                                            </div>
+                                                            <h5 class="post-title"><a href="blog-single.html">New
+                                                                    Decoration Style</a>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post post-list-sm">
+                                                        <figure class="post-media">
+                                                            <a href="blog-single.html">
+                                                                <img src="images/blog/9-150x150.jpg" width="85"
+                                                                    height="85" alt="post" />
+                                                            </a>
+                                                        </figure>
+                                                        <div class="post-details">
+                                                            <div class="post-meta">
+                                                                <a href="blog-single.html" class="post-date">JUNE 2,
+                                                                    2021</a>
+                                                            </div>
+                                                            <h5 class="post-title"><a href="blog-single.html">Drinking
+                                                                    Over Beach</a>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post post-list-sm">
+                                                        <figure class="post-media">
+                                                            <a href="blog-single.html">
+                                                                <img src="images/blog/4-150x150.jpg" width="85"
+                                                                    height="85" alt="post" />
+                                                            </a>
+                                                        </figure>
+                                                        <div class="post-details">
+                                                            <div class="post-meta">
+                                                                <a href="blog-single.html" class="post-date">AUGUST 4,
+                                                                    2021</a>
+                                                            </div>
+                                                            <h5 class="post-title"><a href="blog-single.html">Wine
+                                                                    Production</a></h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="post-col">
+                                                    <div class="post post-list-sm">
+                                                        <figure class="post-media">
+                                                            <a href="blog-single.html">
+                                                                <img src="images/blog/3-150x150.jpg" width="85"
+                                                                    height="85" alt="post" />
+                                                            </a>
+                                                        </figure>
+                                                        <div class="post-details">
+                                                            <div class="post-meta">
+                                                                <a href="blog-single.html" class="post-date">AUGUST 4,
+                                                                    2021</a>
+                                                            </div>
+                                                            <h5 class="post-title"><a href="blog-single.html">Wine For
+                                                                    Gentry</a>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post post-list-sm">
+                                                        <figure class="post-media">
+                                                            <a href="blog-single.html">
+                                                                <img src="images/blog/5-150x150.jpg" width="85"
+                                                                    height="85" alt="post" />
+                                                            </a>
+                                                        </figure>
+                                                        <div class="post-details">
+                                                            <div class="post-meta">
+                                                                <a href="blog-single.html" class="post-date">FEBRUARY 2,
+                                                                    2021</a>
+                                                            </div>
+                                                            <h5 class="post-title"><a href="blog-single.html">20% Off
+                                                                    Coupon for
+                                                                    Cyber</a>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post post-list-sm">
+                                                        <figure class="post-media">
+                                                            <a href="blog-single.html">
+                                                                <img src="images/blog/1-150x150.jpg" width="85"
+                                                                    height="85" alt="post" />
+                                                            </a>
+                                                        </figure>
+                                                        <div class="post-details">
+                                                            <div class="post-meta">
+                                                                <a href="blog-single.html" class="post-date">OCTOBER 17,
+                                                                    2021</a>
+                                                            </div>
+                                                            <h5 class="post-title"><a href="blog-single.html">New Trend
+                                                                    In 2021</a>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- End Main -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-middle">
+                    <div class="footer-left">
+                        <ul class="widget-body">
+                            <li>
+                                <a href="tel:#" class="footer-icon-box">
+                                    <i class="p-icon-phone-solid"></i>
+                                    <span>+456 789 000</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="">
+                                    <i class="p-icon-map"></i>
+                                    <span>25 West 21th STREET, Miami FL, USA</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:mail@panda.com" class="">
+                                    <i class="p-icon-message"></i>
+                                    <span>info@panda.com</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="">
+                                    <i class="p-icon-clock"></i>
+                                    <span>Mon-Fri: 10:00 - 18:00</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-center">
+                        <a href="demo1.html" class="logo-footer">
+                            <img src="images/logo.png" alt="logo-footer" width="171" height="41">
+                        </a>
+                        <div class="social-links">
+                            <a href="#" class="social-link fab fa-facebook-f" title="Facebook"></a>
+                            <a href="#" class="social-link fab fa-twitter" title="Twitter"></a>
+                            <a href="#" class="social-link fab fa-pinterest" title="Pinterest"></a>
+                            <a href="#" class="social-link fab fa-linkedin-in" title="Linkedin"></a>
+                        </div>
+                        <!-- End of Social Links -->
+                    </div>
+                    <div class="footer-right">
+                        <div class="widget-newsletter">
+                            <h4 class="widget-title">Subscribe Newsletter</h4>
+                            <p>Subscribe to the Panda eCommerce Newsletter<br> updates from your favourite products.
+                            </p>
+                            <form action="#" class="form-simple">
+                                <input type="email" name="email" id="email" placeholder="Email address here..."
+                                    required="">
+                                <button class="btn btn-link" type="submit">sign up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <!-- Sticky Footer -->
+    <div class="sticky-footer sticky-content fix-bottom">
+        <a href="demo1.html" class="sticky-link">
+            <i class="p-icon-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="shop.html" class="sticky-link">
+            <i class="p-icon-category"></i>
+            <span>Categories</span>
+        </a>
+        <a href="wishlist.html" class="sticky-link">
+            <i class="p-icon-heart-solid"></i>
+            <span>Wishlist</span>
+        </a>
+        <a href="account.html" class="sticky-link">
+            <i class="p-icon-user-solid"></i>
+            <span>Account</span>
+        </a>
+        <div class="header-search hs-toggle dir-up">
+            <a href="#" class="search-toggle sticky-link">
+                <i class="p-icon-search-solid"></i>
+                <span>Search</span>
+            </a>
+            <form action="#" class="form-simple">
+                <input type="text" name="search" autocomplete="off" placeholder="Search your keyword..." required />
+                <button class="btn btn-search" type="submit">
+                    <i class="p-icon-search-solid"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- Scroll Top -->
+    <a id="scroll-top" class="scroll-top" href="#top" title="Top" role="button"> <i class="p-icon-arrow-up"></i>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+            <circle id="progress-indicator" fill="transparent" stroke="#000000" stroke-miterlimit="10" cx="35" cy="35"
+                r="34" style="stroke-dasharray: 108.881, 400;"></circle>
+        </svg>
+    </a>
+
+    <!-- MobileMenu -->
+    <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-overlay">
+        </div>
+        <!-- End Overlay -->
+        <a class="mobile-menu-close" href="#"><i class="p-icon-times"></i></a>
+        <!-- End CloseButton -->
+        <div class="mobile-menu-container scrollable">
+            <form action="#" class="inline-form">
+                <input type="search" name="search" autocomplete="off" placeholder="Search your keyword..." required />
+                <button class="btn btn-search" type="submit">
+                    <i class="p-icon-search-solid"></i>
+                </button>
+            </form>
+            <!-- End Search Form -->
+            <ul class="mobile-menu mmenu-anim">
+                <li>
+                    <a href="demo1.html">Home</a>
+                </li>
+                <li>
+                    <a href="shop.html">Shop</a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Shop Layouts
+                            </a>
+                            <ul>
+                                <li><a href="shop-list.html">Shop list</a></li>
+                                <li><a href="shop-3-cols.html">3 Columns mode</a>
+                                </li>
+                                <li><a href="shop-4-cols.html">4 Columns mode</a></li>
+                                <li><a href="shop-5-cols.html">5 Columns mode</a>
+                                </li>
+                                <li><a href="shop-6-cols.html">6 Columns mode</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Shop Variations
+                            </a>
+                            <ul>
+                                <li><a href="shop-left-sidebar.html">With left sidebar</a>
+                                </li>
+                                <li><a href="shop-full-width.html">Full width</a>
+                                </li>
+                                <li><a href="shop-horizontal-filter.html">Horizontal filter</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Product Details
+                            </a>
+                            <ul>
+                                <li><a href="product-simple.html">Default</a></li>
+                                <li><a href="product-gallery.html">Gallery</a></li>
+                                <li><a href="product-sticky.html">Sticky info</a></li>
+                                <li><a href="product-full.html">Full width</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Woo Subpages
+                            </a>
+                            <ul>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="account.html">My account</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Elements</a>
+                    <ul>
+                        <li>
+                            <a href="#">Elements 1</a>
+                            <ul>
+                                <li><a href="element-accordions.html">Accordion</a></li>
+                                <li><a href="element-alerts.html">Alert & Notification</a></li>
+                                <li><a href="element-banner.html">Banner
+                                    </a></li>
+                                <li><a href="element-banner-effect.html">Banner Effect
+                                    </a></li>
+                                <li><a href="element-blog.html">Blog</a></li>
+                                <li><a href="element-button.html">Button</a></li>
+                                <li><a href="element-columns.html">Columns
+                                    </a></li>
+                                <li><a href="element-countdown.html">Countdown</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Elements 2</a>
+                            <ul>
+                                <li><a href="element-creative-grid.html">Creative Grid</a></li>
+                                <li><a href="element-counter.html">Counter
+                                    </a></li>
+                                <li><a href="element-entrance-effect.html">Entrance Effect
+                                    </a></li>
+                                <li><a href="element-mouse-tracking.html">Mouse Tracking Effect
+                                    </a></li>
+                                <li><a href="element-hotspot.html">Hotspot
+                                    </a></li>
+                                <li><a href="element-icon-box.html">Icon Box</a></li>
+                                <li><a href="element-icons.html">Icon Library</a></li>
+                                <li><a href="element-image-box.html">Image box
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Elements 3</a>
+                            <ul>
+                                <li><a href="element-image-gallery.html">Image Gallery</a></li>
+                                <li><a href="element-categories.html">Category</a></li>
+                                <li><a href="element-products.html">Products
+                                    </a></li>
+                                <li><a href="element-product-banner.html">Products + Banner
+                                    </a></li>
+                                <li><a href="element-product-tabs.html">Product Tab
+                                    </a>
+                                </li>
+                                <li><a href="element-section.html">Section Divider
+
+                                    </a></li>
+                                <li><a href="element-slider.html">Slider
+                                    </a></li>
+                                <li><a href="element-social.html">Social Icons
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Elements 4</a>
+                            <ul>
+                                <li><a href="element-tabs.html">Tabs
+                                    </a></li>
+                                <li><a href="element-testimonial.html">Testimonial
+
+                                    </a></li>
+                                <li><a href="element-title.html">Title</a></li>
+                                <li><a href="element-typography.html">Typography
+                                    </a></li>
+                                <li><a href="element-video.html">Video</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                    <ul>
+                        <li><a href="blog.html">Classic</a></li>
+                        <li><a href="blog-single.html">Single Post</a></li>
+                        <li><a href="blog-2-grid.html">Grid 2 Columns</a></li>
+                        <li><a href="blog-3-grid.html">Grid 3 Columns</a></li>
+                        <li><a href="blog-4-grid.html">Grid 4 Columns</a></li>
+                        <li><a href="blog-sidebar.html">Grid Sidebar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Pages</a>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="account.html">My Account</a></li>
+                        <li><a href="faq.html">Faqs</a></li>
+                        <li><a href="error.html">Error 404</a></li>
+                        <li><a href="coming.html">Coming Soon</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://d-themes.com/buynow/pandahtml/">Buy Panda!</a></li>
+            </ul>
+            <!-- End MobileMenu -->
+        </div>
+    </div>
+    <!-- Plugins JS File -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="vendor/sticky/sticky.min.js"></script>
+    <!-- Main JS File -->
+    <script src="js/main.min.js"></script>
+</body>
+
+
+<!-- Mirrored from d-themes.com/html/panda/blog-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 08:35:34 GMT -->
+</html>

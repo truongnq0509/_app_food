@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from d-themes.com/html/panda/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 08:34:53 GMT -->
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <title>Panda - Ultimate eCommerce Template</title>
+
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Panda - Ultimate eCommerce Template">
+    <meta name="author" content="D-THEMES">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
+    <!-- Preload Font -->
+
+    <link rel="preload" href="vendor/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
+    <link rel="preload" href="vendor/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
+
+    <script>
+        WebFontConfig = {
+            google: { families: [ 'Josefin Sans:300,400,500,600,700' ] }
+        };
+        ( function ( d ) {
+            var wf = d.createElement( 'script' ), s = d.scripts[ 0 ];
+            wf.src = 'js/webfont.js';
+            wf.async = true;
+            s.parentNode.insertBefore( wf, s );
+        } )( document );
+    </script>
+
+
+    <link rel="stylesheet" type="text/css" href="vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/magnific-popup/magnific-popup.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/photoswipe/photoswipe.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/photoswipe/default-skin/default-skin.min.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    
+                </div>
+            </div>
+            <!-- End HeaderTop -->
+            <div class="header-middle has-center sticky-header fix-top sticky-content">
+                <div class="container">
+                    <div class="header-left">
+                        <a href="#" class="mobile-menu-toggle" title="Mobile Menu">
+                            <i class="p-icon-bars-solid"></i>
+                        </a>
+                        <a href="home.html" class="logo">
+                            <img src="images/logo.png" alt="logo" width="171" height="41">
+                        </a>
+                        <!-- End of Divider -->
+                    </div>
+                    <div class="header-center">
+                        <nav class="main-nav">
+                            <ul class="menu">
+                                <li class="active">
+                                    <a href="home.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="shop.html">Shop</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="blog.html">Blog</a>
+                                    
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="header-right">
+                        <div class="header-search hs-toggle">
+                            <a class="search-toggle" href="#" title="Search">
+                                <i class="p-icon-search-solid"></i>
+                            </a>
+                            <form action="#" class="form-simple">
+                                <input type="search" autocomplete="off" placeholder="Search in..." required>
+                                <button class="btn btn-search" type="submit">
+                                    <i class="p-icon-search-solid"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="dropdown login-dropdown off-canvas">
+                            <a class="login-toggle" href="ajax/login.html" data-toggle="login-modal">
+                                <span class="sr-only">login</span>
+                                <i class="p-icon-user-solid"></i>
+                            </a>
+                            <!-- End Login Toggle -->
+                            <div class="canvas-overlay"></div>
+                            <a href="#" class="btn-close"></a>
+                            <div class="dropdown-box scrollable">
+                                <div class="login-popup">
+                                    <div class="form-box">
+                                        <div class="tab tab-nav-underline tab-nav-boxed">
+                                            <ul class="nav nav-tabs nav-fill mb-4">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active lh-1 ls-normal" href="#signin">Login</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link lh-1 ls-normal" href="#register">Register</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="signin">
+                                                    <form action="#">
+                                                        <div class="form-group">
+                                                            <input type="text" id="singin-email" name="singin-email"
+                                                                placeholder="Username or Email Address" required="">
+                                                            <input type="password" id="singin-password"
+                                                                name="singin-password" placeholder="Password"
+                                                                required="">
+                                                        </div>
+                                                        <div class="form-footer">
+                                                            <div class="form-checkbox">
+                                                                <input type="checkbox" id="signin-remember"
+                                                                    name="signin-remember">
+                                                                <label for="signin-remember">Remember
+                                                                    me</label>
+                                                            </div>
+                                                            <a href="#" class="lost-link">Lost your password?</a>
+                                                        </div>
+                                                        <button class="btn btn-dark btn-block"
+                                                            type="submit">Login</button>
+                                                    </form>
+                                                    <div class="form-choice text-center">
+                                                        <label>or Login With</label>
+                                                        <div class="social-links social-link-active ">
+                                                            <a href="#" title="Facebook"
+                                                                class="social-link social-facebook fab fa-facebook-f"></a>
+                                                            <a href="#" title="Twitter"
+                                                                class="social-link social-twitter fab fa-twitter"></a>
+                                                            <a href="#" title="Linkedin"
+                                                                class="social-link social-linkedin fab fa-linkedin-in"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="register">
+                                                    <form action="#">
+                                                        <div class="form-group">
+                                                            <input type="text" id="register-user" name="register-user"
+                                                                placeholder="Username" required="">
+                                                            <input type="email" id="register-email"
+                                                                name="register-email" placeholder="Your Email Address"
+                                                                required="">
+                                                            <input type="password" id="register-password"
+                                                                name="register-password" placeholder="Password"
+                                                                required="">
+                                                        </div>
+                                                        <div class="form-footer mb-5">
+                                                            <div class="form-checkbox">
+                                                                <input type="checkbox" id="register-agree"
+                                                                    name="register-agree" required="">
+                                                                <label for="register-agree">I
+                                                                    agree to the
+                                                                    privacy policy</label>
+                                                            </div>
+                                                        </div>
+                                                        <button class="btn btn-dark btn-block"
+                                                            type="submit">Register</button>
+                                                    </form>
+                                                    <div class="form-choice text-center">
+                                                        <label class="ls-m">or Register With</label>
+                                                        <div class="social-links social-link-active ">
+                                                            <a href="#" title="Facebook"
+                                                                class="social-link social-facebook fab fa-facebook-f"></a>
+                                                            <a href="#" title="Twitter"
+                                                                class="social-link social-twitter fab fa-twitter"></a>
+                                                            <a href="#" title="Linkedin"
+                                                                class="social-link social-linkedin fab fa-linkedin-in"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button title="Close (Esc)" type="button" class="mfp-close"><span>×</span></button>
+                                </div>
+                            </div>
+                            <!-- End Dropdown Box -->
+                        </div>
+                     
+                        <div class="dropdown cart-dropdown off-canvas mr-0 mr-lg-2">
+                            <a href="#" class="cart-toggle link">
+                                <i class="p-icon-cart-solid">
+                                    <span class="cart-count">2</span>
+                                </i>
+                            </a>
+                            <div class="canvas-overlay"></div>
+                            <div class="dropdown-box">
+                                <div class="canvas-header">
+                                    <h4 class="canvas-title">Shopping Cart</h4>
+                                    <a href="#" class="btn btn-dark btn-link btn-close">close<i
+                                            class="p-icon-arrow-long-right"></i><span class="sr-only">Cart</span></a>
+                                </div>
+                                <div class="products scrollable">
+                                    <div class="product product-mini">
+                                        <figure class="product-media">
+                                            <a href="product-simple.html">
+                                                <img src="images/cart/product-1.jpg" alt="product" width="84"
+                                                    height="105" />
+                                            </a>
+                                            <a href="#" title="Remove Product" class="btn-remove">
+                                                <i class="p-icon-times"></i><span class="sr-only">Close</span>
+                                            </a>
+                                        </figure>
+                                        <div class="product-detail">
+                                            <a href="product.html" class="product-name">Peanuts</a>
+                                            <div class="price-box">
+                                                <span class="product-quantity">7</span>
+                                                <span class="product-price">$12.00</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- End of Cart Product -->
+                                    <div class="product product-mini">
+                                        <figure class="product-media">
+                                            <a href="product-simple.html">
+                                                <img src="images/cart/product-2.jpg" alt="product" width="84"
+                                                    height="105" />
+                                            </a>
+                                            <a href="#" title="Remove Product" class="btn-remove">
+                                                <i class="p-icon-times"></i><span class="sr-only">Close</span>
+                                            </a>
+                                        </figure>
+                                        <div class="product-detail">
+                                            <a href="product.html" class="product-name">Prime Beef</a>
+                                            <div class="price-box">
+                                                <span class="product-quantity">4</span>
+                                                <span class="product-price">$16.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Cart Product -->
+                                </div>
+                                <!-- End of Products  -->
+                                <div class="cart-total">
+                                    <label>Subtotal:</label>
+                                    <span class="price">$148.00</span>
+                                </div>
+                                <!-- End of Cart Total -->
+                                <div class="cart-action">
+                                    <a href="cart.html" class="btn btn-outline btn-dim mb-2">View
+                                        Cart</a>
+                                    <a href="checkout.html" class="btn btn-dim"><span>Go To Checkout</span></a>
+                                </div>
+                                <!-- End of Cart Action -->
+                            </div>
+                            <!-- End Dropdown Box -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+        <main class="main checkout">
+            <div class="page-content pt-8 pb-10 mb-4">
+                <div class="step-by pr-4 pl-4">
+                    <h3 class="title title-step"><a href="cart.html">1.Giỏ Hàng</a></h3>
+                    <h3 class="title title-step active"><a href="checkout.html">2.Thanh Toán</a></h3>
+                    <h3 class="title title-step"><a href="order.html">3.Hoàn Thành Đơn Hàng</a></h3>
+                </div>
+                <div class="container mt-7">
+                    <form action="#" class="form">
+                        <div class="row">
+                            <div class="col-lg-7 mb-6 mb-lg-0 check-detail">
+                                <h3 class="title text-left mt-3 mb-6">Thông Tin</h3>
+                                <label>Tên Người Nhận</label>
+                                <input type="text" class="form-control" name="fullname" />
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <label>Email</label>
+                                        <input type="text" class="form-control" name="email" required="" />
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <label>Phone</label>
+                                        <input type="text" class="form-control" name="phone" required="" />
+                                    </div>
+                                </div>
+                                <label>Địa Chỉ</label>
+                                <input type="text" class="form-control" name="email-address" required="" />
+                                <label>Notes</label>
+                                <textarea class="form-control mb-0" cols="30" rows="5"
+                                    placeholder="Write Your Review Here..."></textarea>
+                            </div>
+                            <aside class="col-lg-5 sticky-sidebar-wrapper  pl-lg-6">
+                                <div class="sticky-sidebar" data-sticky-options="{'bottom': 50}">
+                                    <div class="summary pt-5">
+                                        <h3 class="title">Đơn Hàng Của Bạn</h3>
+                                        <table class="order-sidebar">
+                                            <thead>
+                                                <tr>
+                                                    <th>Product</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="product-name">Vegatable<span
+                                                            class="product-quantity">×&nbsp;1</span></td>
+                                                    <td class="product-total text-body">$110.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="product-name">Fruit<span
+                                                            class="product-quantity">×&nbsp;1</span>
+                                                    </td>
+                                                    <td class="product-total text-body">$180.00</td>
+                                                </tr>
+                                                <tr class="summary-subtotal">
+                                                    <td>
+                                                        <h4 class="summary-subtitle">Tổng Phụ</h4>
+                                                    </td>
+                                                    <td class="summary-subtotal-price">$290.00
+                                                    </td>
+                                                </tr>
+                                                <tr class="summary-total">
+                                                    <td>
+                                                        <h4 class="summary-subtitle">Tổng</h4>
+                                                    </td>
+                                                    <td>
+                                                        <p class="summary-total-price ls-s">$290.00</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <button type="submit" class="btn btn-dim btn-block mt-6">Đặt Hàng</button>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- End Main -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-middle">
+                    <div class="footer-left">
+                        <ul class="widget-body">
+                            <li>
+                                <a href="tel:#" class="footer-icon-box">
+                                    <i class="p-icon-phone-solid"></i>
+                                    <span>+456 789 000</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="">
+                                    <i class="p-icon-map"></i>
+                                    <span>25 West 21th STREET, Miami FL, USA</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:mail@panda.com" class="">
+                                    <i class="p-icon-message"></i>
+                                    <span>info@panda.com</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="">
+                                    <i class="p-icon-clock"></i>
+                                    <span>Mon-Fri: 10:00 - 18:00</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-center">
+                        <a href="demo1.html" class="logo-footer">
+                            <img src="images/logo.png" alt="logo-footer" width="171" height="41">
+                        </a>
+                        <div class="social-links">
+                            <a href="#" class="social-link fab fa-facebook-f" title="Facebook"></a>
+                            <a href="#" class="social-link fab fa-twitter" title="Twitter"></a>
+                            <a href="#" class="social-link fab fa-pinterest" title="Pinterest"></a>
+                            <a href="#" class="social-link fab fa-linkedin-in" title="Linkedin"></a>
+                        </div>
+                        <!-- End of Social Links -->
+                    </div>
+                    <div class="footer-right">
+                        <div class="widget-newsletter">
+                            <h4 class="widget-title">Subscribe Newsletter</h4>
+                            <p>Subscribe to the Panda eCommerce Newsletter<br> updates from your favourite products.
+                            </p>
+                            <form action="#" class="form-simple">
+                                <input type="email" name="email" id="email" placeholder="Email address here..."
+                                    required="">
+                                <button class="btn btn-link" type="submit">sign up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <!-- Sticky Footer -->
+    <div class="sticky-footer sticky-content fix-bottom">
+        <a href="demo1.html" class="sticky-link">
+            <i class="p-icon-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="shop.html" class="sticky-link">
+            <i class="p-icon-category"></i>
+            <span>Categories</span>
+        </a>
+        <a href="wishlist.html" class="sticky-link">
+            <i class="p-icon-heart-solid"></i>
+            <span>Wishlist</span>
+        </a>
+        <a href="account.html" class="sticky-link">
+            <i class="p-icon-user-solid"></i>
+            <span>Account</span>
+        </a>
+        <div class="header-search hs-toggle dir-up">
+            <a href="#" class="search-toggle sticky-link">
+                <i class="p-icon-search-solid"></i>
+                <span>Search</span>
+            </a>
+            <form action="#" class="form-simple">
+                <input type="text" name="search" autocomplete="off" placeholder="Search your keyword..." required />
+                <button class="btn btn-search" type="submit">
+                    <i class="p-icon-search-solid"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- Scroll Top -->
+    <a id="scroll-top" class="scroll-top" href="#top" title="Top" role="button"> <i class="p-icon-arrow-up"></i>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+            <circle id="progress-indicator" fill="transparent" stroke="#000000" stroke-miterlimit="10" cx="35" cy="35"
+                r="34" style="stroke-dasharray: 108.881, 400;"></circle>
+        </svg>
+    </a>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides.
+            			PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            			Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" aria-label="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--zoom" aria-label="Zoom in/out"></button>
+
+                    <div class="pswp__preloader">
+                        <div class="loading-spin"></div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button--arrow--left" aria-label="Previous (arrow left)"></button>
+                <button class="pswp__button--arrow--right" aria-label="Next (arrow right)"></button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MobileMenu -->
+    <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-overlay">
+        </div>
+        <!-- End Overlay -->
+        <a class="mobile-menu-close" href="#"><i class="p-icon-times"></i></a>
+        <!-- End CloseButton -->
+        <div class="mobile-menu-container scrollable">
+            <form action="#" class="inline-form">
+                <input type="search" name="search" autocomplete="off" placeholder="Search your keyword..." required />
+                <button class="btn btn-search" type="submit">
+                    <i class="p-icon-search-solid"></i>
+                </button>
+            </form>
+            <!-- End Search Form -->
+            <ul class="mobile-menu mmenu-anim">
+                <li>
+                    <a href="demo1.html">Home</a>
+                </li>
+                <li>
+                    <a href="shop.html" class="active">Shop</a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Shop Layouts
+                            </a>
+                            <ul>
+                                <li><a href="shop-list.html">Shop list</a></li>
+                                <li><a href="shop-3-cols.html">3 Columns mode</a>
+                                </li>
+                                <li><a href="shop-4-cols.html">4 Columns mode</a></li>
+                                <li><a href="shop-5-cols.html">5 Columns mode</a>
+                                </li>
+                                <li><a href="shop-6-cols.html">6 Columns mode</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Shop Variations
+                            </a>
+                            <ul>
+                                <li><a href="shop-left-sidebar.html">With left sidebar</a>
+                                </li>
+                                <li><a href="shop-full-width.html">Full width</a>
+                                </li>
+                                <li><a href="shop-horizontal-filter.html">Horizontal filter</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Product Details
+                            </a>
+                            <ul>
+                                <li><a href="product-simple.html">Default</a></li>
+                                <li><a href="product-gallery.html">Gallery</a></li>
+                                <li><a href="product-sticky.html">Sticky info</a></li>
+                                <li><a href="product-full.html">Full width</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Woo Subpages
+                            </a>
+                            <ul>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="account.html">My account</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Elements</a>
+                    <ul>
+                        <li>
+                            <a href="#">Elements 1</a>
+                            <ul>
+                                <li><a href="element-accordions.html">Accordion</a></li>
+                                <li><a href="element-alerts.html">Alert & Notification</a></li>
+                                <li><a href="element-banner.html">Banner
+                                    </a></li>
+                                <li><a href="element-banner-effect.html">Banner Effect
+                                    </a></li>
+                                <li><a href="element-blog.html">Blog</a></li>
+                                <li><a href="element-button.html">Button</a></li>
+                                <li><a href="element-columns.html">Columns
+                                    </a></li>
+                                <li><a href="element-countdown.html">Countdown</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Elements 2</a>
+                            <ul>
+                                <li><a href="element-creative-grid.html">Creative Grid</a></li>
+                                <li><a href="element-counter.html">Counter
+                                    </a></li>
+                                <li><a href="element-entrance-effect.html">Entrance Effect
+                                    </a></li>
+                                <li><a href="element-mouse-tracking.html">Mouse Tracking Effect
+                                    </a></li>
+                                <li><a href="element-hotspot.html">Hotspot
+                                    </a></li>
+                                <li><a href="element-icon-box.html">Icon Box</a></li>
+                                <li><a href="element-icons.html">Icon Library</a></li>
+                                <li><a href="element-image-box.html">Image box
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Elements 3</a>
+                            <ul>
+                                <li><a href="element-image-gallery.html">Image Gallery</a></li>
+                                <li><a href="element-categories.html">Category</a></li>
+                                <li><a href="element-products.html">Products
+                                    </a></li>
+                                <li><a href="element-product-banner.html">Products + Banner
+                                    </a></li>
+                                <li><a href="element-product-tabs.html">Product Tab
+                                    </a>
+                                </li>
+                                <li><a href="element-section.html">Section Divider
+
+                                    </a></li>
+                                <li><a href="element-slider.html">Slider
+                                    </a></li>
+                                <li><a href="element-social.html">Social Icons
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Elements 4</a>
+                            <ul>
+                                <li><a href="element-tabs.html">Tabs
+                                    </a></li>
+                                <li><a href="element-testimonial.html">Testimonial
+
+                                    </a></li>
+                                <li><a href="element-title.html">Title</a></li>
+                                <li><a href="element-typography.html">Typography
+                                    </a></li>
+                                <li><a href="element-video.html">Video</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                    <ul>
+                        <li><a href="blog.html">Classic</a></li>
+                        <li><a href="blog-single.html">Single Post</a></li>
+                        <li><a href="blog-2-grid.html">Grid 2 Columns</a></li>
+                        <li><a href="blog-3-grid.html">Grid 3 Columns</a></li>
+                        <li><a href="blog-4-grid.html">Grid 4 Columns</a></li>
+                        <li><a href="blog-sidebar.html">Grid Sidebar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Pages</a>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="account.html">My Account</a></li>
+                        <li><a href="faq.html">Faqs</a></li>
+                        <li><a href="error.html">Error 404</a></li>
+                        <li><a href="coming.html">Coming Soon</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://d-themes.com/buynow/pandahtml/">Buy Panda!</a></li>
+            </ul>
+            <!-- End MobileMenu -->
+        </div>
+    </div>
+    <!-- Plugins JS File -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/sticky/sticky.min.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendor/elevatezoom/jquery.elevatezoom.min.js"></script>
+    <script src="vendor/photoswipe/photoswipe.min.js"></script>
+    <script src="vendor/photoswipe/photoswipe-ui-default.min.js"></script>
+    <!-- Main JS File -->
+    <script src="js/main.min.js"></script>
+</body>
+
+
+<!-- Mirrored from d-themes.com/html/panda/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 08:34:53 GMT -->
+</html>
