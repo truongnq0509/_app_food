@@ -40,7 +40,7 @@
 								</h3>
 								<ul class="widget-body filter-items">
 									<?php foreach($categorys as $category): ?>
-										<li><a href="#"><?= $category['name'] ?></a></li>
+										<li><a href="index.php?controller=detail&id=<?= $category['id']?>"><?= $category['name'] ?></a></li>
 									<?php endforeach; ?>
 								</ul>
 							</div>
@@ -95,12 +95,6 @@
 											</a>
 											<a href="#" class="btn-product-icon btn-wishlist" title="Add to Wishlist">
 												<i class="p-icon-heart-solid"></i>
-											</a>
-											<a href="#" class="btn-product-icon btn-compare" title="Compare">
-												<i class="p-icon-compare-solid"></i>
-											</a>
-											<a href="#" class="btn-product-icon btn-quickview" title="Quick View">
-												<i class="p-icon-search-solid"></i>
 											</a>
 										</div>
 									</figure>

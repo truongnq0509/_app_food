@@ -4,8 +4,8 @@ $data = null;
 
 function index() {
     global $data;
-    $products = getProduct();
-    $categorys = getCategory();
+    $products = getAllProducts();
+    $categorys = getAllCategory();
     view('layouts/index', [
         'content' => 'home/index',
         $data = [

@@ -1,14 +1,16 @@
 <?php 
 
-define('tableCategory', 'category');
-define('tableProduct', 'product');
+define('tableProduct', 'products');
+define('tableCategory', 'categorys');
 
-function getCategory() {
-    return all(tableCategory);
+function getAllProducts() {
+    $data = all(tableProduct);
+    return $data;
 }
 
-function getProduct() {
-    return all(tableProduct);
+function getAllCategory() {
+    $data = all(tableCategory);
+    return $data;
 }
 
 

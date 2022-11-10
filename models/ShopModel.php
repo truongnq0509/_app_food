@@ -1,7 +1,7 @@
 <?php 
 
-define('tableProduct', 'product');
-define('tableCategory', 'category');
+define('tableProduct', 'products');
+define('tableCategory', 'categorys');
 
 function getAllProducts() {
     $data = all(tableProduct);
