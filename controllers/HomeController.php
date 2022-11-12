@@ -1,5 +1,6 @@
 <?php 
-loadModel('HomeModel');
+loadModel('ProductModel');
+loadModel('CategoryModel');
 $data = null;
 
 function index() {
@@ -7,6 +8,7 @@ function index() {
     $products = getAllProducts();
     $categorys = getAllCategory();
     view('layouts/index', [
+        'title' => 'Trang Chủ',
         'content' => 'home/index',
         $data = [
             'products' => $products,

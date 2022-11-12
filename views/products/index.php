@@ -4,9 +4,9 @@
 		<div class="category-container row justify-content-center cols-2 cols-xs-3 cols-sm-4 cols-md-6 pt-6">
 			<?php foreach($categorys as $category): ?>
 				<div class="category category-ellipse mb-4 mb-md-0">
-					<a href="#">
+					<a href="index.php?controller=category&id=<?=$category['id']?>">
 						<figure>
-							<img src="https://product.hstatic.net/200000299178/product/1_633df950ecd9499e85d4bd0ea6263741_grande.jpg" alt="category" width="160" height="161">
+							<img src="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" alt="category" width="160" height="161">
 						</figure>
 					</a>
 					<div class="category-content">
@@ -20,8 +20,8 @@
 	<nav class="breadcrumb-nav has-border">
 		<div class="container">
 			<ul class="breadcrumb">
-				<li><a href="demo1.html">Home</a></li>
-				<li>Shop</li>
+				<li><a href="index.php">Trang Chủ</a></li>
+				<li>Tất Cả</li>
 			</ul>
 		</div>
 	</nav>
@@ -29,26 +29,7 @@
 	<div class="page-content mb-10 shop-page">
 		<div class="container">
 			<div class="row main-content-wrap">
-				<aside class="col-lg-3 sidebar widget-sidebar sidebar-fixed sidebar-toggle-remain shop-sidebar sticky-sidebar-wrapper">
-					<div class="sidebar-overlay"></div>
-					<a class="sidebar-close" href="#"><i class="p-icon-times"></i></a>
-					<div class="sidebar-content">
-						<div class="sticky-sidebar pt-7" data-sticky-options="{'top': 10}">
-
-							<div class="widget widget-collapsible">
-								<h3 class="widget-title title-underline"><span class="title-text">Danh Mục</span>
-								</h3>
-								<ul class="widget-body filter-items">
-									<?php foreach($categorys as $category): ?>
-										<li><a href="index.php?controller=detail&id=<?= $category['id']?>"><?= $category['name'] ?></a></li>
-									<?php endforeach; ?>
-								</ul>
-							</div>
-
-						</div>
-					</div>
-				</aside>
-				<div class="col-lg-9 main-content pl-lg-6">
+				<div class="col-lg-12 main-content pl-lg-6">
 					<nav class="toolbox sticky-toolbox sticky-content fix-top">
 						<div class="toolbox-left">
 							<a href="#" class="toolbox-item left-sidebar-toggle btn btn-outline btn-primary btn-icon-right d-lg-none"><span>Filter</span><i class="p-icon-category-1 ml-md-1"></i></a>
@@ -81,16 +62,16 @@
 							</div>
 						</div>
 					</nav>
-					<div class="row product-wrapper cols-lg-3 cols-2">
+					<div class="row product-wrapper cols-lg-5 cols-2">
 						<?php foreach($products as $product): ?>
 							<div class="product-wrap">
 								<div class="product shadow-media text-center">
 									<figure class="product-media">
-										<a href="#">
-											<img src="https://product.hstatic.net/200000299178/product/1_633df950ecd9499e85d4bd0ea6263741_grande.jpg" alt="product" width="295" height="369" />
+										<a href="index.php?controller=product&action=detail&id=<?=$product['id']?>">
+											<img src="<?= $product['image'] ?>" alt="product" width="295" height="369" />
 										</a>
 										<div class="product-action-vertical">
-											<a href="#" class="btn-product-icon btn-cart" data-toggle="modal" data-target="#addCartModal" title="Add to Cart">
+											<a href="index.php?controller=cart&action=store&id=<?=$product['id']?>" class="btn-product-icon" title="Add to Cart">
 												<i class="p-icon-cart-solid"></i>
 											</a>
 											<a href="#" class="btn-product-icon btn-wishlist" title="Add to Wishlist">
@@ -106,7 +87,7 @@
 											</div>
 										</div>
 										<h5 class="product-name">
-											<a href="product-simple.html">
+											<a href="index.php?controller=product&action=detail&id=<?=$item['id']?>">
 												<?= $product['name'] ?>
 											</a>
 										</h5>

@@ -146,3 +146,14 @@
 <script src="./public/front-end/elevatezoom/jquery.elevatezoom.min.js"></script>
 <!-- Main JS File -->
 <script src="./public/front-end/js/main.js"></script>
+<script src="./public/front-end/vendor/sticky/sticky.min.js"></script>
+<script src="./public/front-end/vendor/photoswipe/photoswipe.min.js"></script>
+<script src="./public/front-end/vendor/photoswipe/photoswipe-ui-default.min.js"></script>
+<!-- Main JS File -->
+<script src="./public/front-end/js/main.min.js"></script>
+<script src="./public/front-end/js/validator.js"></script>
+
+<script>
+	Validator('#login-form')
+	Validator('#register-form')
+</script>

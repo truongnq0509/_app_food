@@ -17,7 +17,7 @@
 							<a href="index.php">Trang Chủ</a>
 						</li>
 						<li>
-							<a href="index.php?controller=shop">Cửa Hàng</a>
+							<a href="index.php?controller=product">Cửa Hàng</a>
 						</li>
 						<li>
 							<a href="index.php?controller=blog">Blog</a>
@@ -38,79 +38,34 @@
 						</button>
 					</form>
 				</div>
-				<a href="login.html" >
-					<a style="font-size: 20px; width: 30px; height: 30px;" href="login.html">
-						<span class="sr-only">login</span>
-						<i class="p-icon-user-solid"></i>
-					</a>
-				</a>
 
-				<div class="dropdown cart-dropdown off-canvas mr-0 mr-lg-2">
-					<a href="#" class="cart-toggle link">
+
+				<div class="dropdown cart-dropdown  mr-0 mr-lg-2">
+					<a href="index.php?controller=cart" class="cart-toggle link">
 						<i class="p-icon-cart-solid">
-							<span class="cart-count">2</span>
+							<?php
+							if (isset($_SESSION['cart'])) :
+							?>
+								<span class="cart-count">
+									<?php
+									echo count($_SESSION['cart']);
+									?>
+								</span>
+							<?php endif; ?>
 						</i>
 					</a>
-					<div class="canvas-overlay"></div>
-					<div class="dropdown-box">
-						<div class="canvas-header">
-							<h4 class="canvas-title">Shopping Cart</h4>
-							<a href="#" class="btn btn-dark btn-link btn-close">close<i class="p-icon-arrow-long-right"></i><span class="sr-only">Cart</span></a>
-						</div>
-						<div class="products scrollable">
-							<div class="product product-mini">
-								<figure class="product-media">
-									<a href="product-simple.html">
-										<img src="./public/front-end/images/cart/product-1.jpg" alt="product" width="84" height="105" />
-									</a>
-									<a href="#" title="Remove Product" class="btn-remove">
-										<i class="p-icon-times"></i><span class="sr-only">Close</span>
-									</a>
-								</figure>
-								<div class="product-detail">
-									<a href="product.html" class="product-name">Peanuts</a>
-									<div class="price-box">
-										<span class="product-quantity">7</span>
-										<span class="product-price">$12.00</span>
-									</div>
-								</div>
-
-							</div>
-							<!-- End of Cart Product -->
-							<div class="product product-mini">
-								<figure class="product-media">
-									<a href="product-simple.html">
-										<img src="./public/front-end/images/cart/product-2.jpg" alt="product" width="84" height="105" />
-									</a>
-									<a href="#" title="Remove Product" class="btn-remove">
-										<i class="p-icon-times"></i><span class="sr-only">Close</span>
-									</a>
-								</figure>
-								<div class="product-detail">
-									<a href="product.html" class="product-name">Prime Beef</a>
-									<div class="price-box">
-										<span class="product-quantity">4</span>
-										<span class="product-price">$16.00</span>
-									</div>
-								</div>
-							</div>
-							<!-- End of Cart Product -->
-						</div>
-						<!-- End of Products  -->
-						<div class="cart-total">
-							<label>Subtotal:</label>
-							<span class="price">$148.00</span>
-						</div>
-						<!-- End of Cart Total -->
-						<div class="cart-action">
-							<a href="cart.html" class="btn btn-outline btn-dim mb-2">View
-								Cart</a>
-							<a href="checkout.html" class="btn btn-dim"><span>Go To Checkout</span></a>
-						</div>
-						<!-- End of Cart Action -->
-					</div>
-					<!-- End Dropdown Box -->
 				</div>
+
+				<?php
+				if (!empty($_SESSION['user'])) : ?>
+					<a style="font-size: 16px; margin: 0 4px;" href="index.php?controller=account&action=logout" onclick="return confirm('Bạn có chắc muốn đăng xuất khỏi trái đất không')">
+						<?php echo $_SESSION['user']['email']; ?>
+					</a>
+				<?php else : ?>
+					<a style="font-size: 24px; margin: 0 4px;" href="index.php?controller=account">
+						<i class="fa fa-user"></i>
+					</a>
+				<?php endif; ?>
 			</div>
 		</div>
 	</div>

@@ -35,6 +35,9 @@
     <link rel="stylesheet" type="text/css" href="./public/front-end/vendor/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="./public/front-end/vendor/magnific-popup/magnific-popup.min.css">
     <link rel="stylesheet" type="text/css" href="./public/front-end/vendor/nouislider/nouislider.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="./public/front-end/vendor/photoswipe/photoswipe.min.css">
+    <link rel="stylesheet" type="text/css" href="./public/front-end/vendor/photoswipe/default-skin/default-skin.min.css">
     <!-- Main CSS File -->
     <link rel="stylesheet" type="text/css" href="./public/front-end/css/demo1.min.css">
     <link rel="stylesheet" type="text/css" href="./public/front-end/css/style.min.css">
@@ -47,10 +50,15 @@
             view($content, $data[0]);
             require_once './views/blocks/footer.php';
         ?>
+        <div id="title" style="display: none;"><?= $title?></div>
     </div>
     <?php 
         require_once './views/blocks/responsive.php'
     ?>
+    <script>
+        const title = document.getElementById('title').textContent;
+        document.title = title;
+    </script>
 </body>
 
 </html>

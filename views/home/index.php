@@ -6,9 +6,9 @@
 				<ul class="nav nav-tabs">
 					<?php foreach ($categorys as $category) : ?>
 						<li class="nav-item">
-							<a class="nav-link active" href="index.php?controller=detail&id=<?= $category['id']?>">
+							<a class="nav-link" href="index.php?controller=category&id=<?= $category['id']?>">
 								<figure>
-									<img src="https://product.hstatic.net/200000299178/product/12_c182e986a3f14d9e87e25f78b7fc176c_grande.jpg" width="160" height="130" alt="Nav img" />
+									<img src="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" style="width: 102px; height: 102px;" width="160" height="130" alt="Nav img" />
 								</figure>
 								<div class="nav-title"><?= $category['name'] ?></div>
 							</a>
@@ -17,15 +17,15 @@
 				</ul>
 				<div class="tab-content">
 					<div class="tab-pane active" id="canned">
-						<div class="row cols-lg-4 cols-md-3 cols-2">
+						<div class="row cols-lg-6 cols-md-4 cols-3">
 							<!-- Lặp sản phẩm nhé -->
 							<?php
 							foreach ($products as $product) :
 							?>
 								<div class="product shadow-media text-center">
 									<figure class="product-media">
-										<a href="index.php?controller=detail&id=<?=$product['id']?>">
-											<img src="https://product.hstatic.net/200000299178/product/12_c182e986a3f14d9e87e25f78b7fc176c_grande.jpg" alt="product" width="295" height="369" />
+										<a href="index.php?controller=product&action=detail&id=<?=$product['id']?>">
+											<img src="<?= $product['image']?>" alt="product" width="295" height="369" />
 										</a>
 										<div class="product-label-group">
 											<?php if ($product['sale']) : ?>
@@ -33,7 +33,7 @@
 											<?php endif; ?>
 										</div>
 										<div class="product-action-vertical">
-											<a href="#" class="btn-product-icon btn-cart" data-toggle="modal" data-target="#addCartModal" title="Add to Cart">
+											<a href="index.php?controller=cart&action=store&id=<?=$product['id']?>" class="btn-product-icon" title="Add to Cart">
 												<i class="p-icon-cart-solid"></i>
 											</a>
 											<a href="#" class="btn-product-icon btn-wishlist" title="Add to Wishlist">

@@ -1,4 +1,5 @@
 <?php 
+    session_start();
     // connect database
     require './config/database.php';
     require './models/BaseModel.php';

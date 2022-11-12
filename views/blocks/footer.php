@@ -8,25 +8,25 @@
 					<li>
 						<a href="tel:#" class="footer-icon-box">
 							<i class="p-icon-phone-solid"></i>
-							<span>+456 789 000</span>
+							<span>+84 343559069</span>
 						</a>
 					</li>
 					<li>
 						<a href="#" class="">
 							<i class="p-icon-map"></i>
-							<span>25 West 21th Street, Miami FL, USA</span>
+							<span>Việt Nam</span>
 						</a>
 					</li>
 					<li>
 						<a href="mailto:mail@panda.com" class="">
 							<i class="p-icon-message"></i>
-							<span>info@panda.com</span>
+							<span>devfood@gmail.com</span>
 						</a>
 					</li>
 					<li>
 						<a href="#" class="">
 							<i class="p-icon-clock"></i>
-							<span>Mon-Fri: 10:00 - 18:00</span>
+							<span>Mở Cửa: 10:00 - 18:00</span>
 						</a>
 					</li>
 				</ul>
@@ -45,11 +45,11 @@
 			</div>
 			<div class="footer-right">
 				<div class="widget-newsletter">
-					<h4 class="widget-title">Subscribe Newsletter</h4>
-					<p>Subscribe to the Panda eCommerce Newsletter<br> updates from your favourite products.
+					<h4 class="widget-title"></h4>
+					<p>
 					</p>
 					<form action="#" class="form-simple">
-						<input type="email" name="email" id="email" placeholder="Email address here..." required="">
+						<input type="email" name="email" id="email" placeholder="Email ..." required="">
 						<button class="btn btn-link" type="submit">sign up</button>
 					</form>
 				</div>
