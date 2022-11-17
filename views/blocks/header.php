@@ -31,8 +31,8 @@
 					<a class="search-toggle" href="#" title="Search">
 						<i class="p-icon-search-solid"></i>
 					</a>
-					<form action="#" class="form-simple">
-						<input type="search" autocomplete="off" placeholder="Search in..." required>
+					<form action="index.php?controller=product&action=search" method="post" id="form-search" class="form-simple">
+						<input type="search" autocomplete="off" placeholder="Search in..." name="search">
 						<button class="btn btn-search" type="submit">
 							<i class="p-icon-search-solid"></i>
 						</button>
@@ -44,7 +44,7 @@
 					<a href="index.php?controller=cart" class="cart-toggle link">
 						<i class="p-icon-cart-solid">
 							<?php
-							if (isset($_SESSION['cart'])) :
+							if (!empty($_SESSION['cart'])) :
 							?>
 								<span class="cart-count">
 									<?php
@@ -58,7 +58,7 @@
 
 				<?php
 				if (!empty($_SESSION['user'])) : ?>
-					<a style="font-size: 16px; margin: 0 4px;" href="index.php?controller=account&action=logout" onclick="return confirm('Bạn có chắc muốn đăng xuất khỏi trái đất không')">
+					<a style="font-size: 16px; margin: 0 4px;" href="index.php?controller=account&action=logout" onclick="return confirm('Bạn có chắc muốn đăng xuất khỏi trái đất không 😂😂😂')">
 						<?php echo $_SESSION['user']['email']; ?>
 					</a>
 				<?php else : ?>
@@ -70,3 +70,16 @@
 		</div>
 	</div>
 </header>
+
+<!-- <script type="text/javascript">
+	$(document).on("keyup", `#form-search input`, function(e) {
+        let txt = $(this).val()
+        $.post(
+            './controllers/ProductController.php',
+            { data: txt },
+            function(response) {
+                $(".main").html(txt);
+            }
+        )
+    })
+</script> -->

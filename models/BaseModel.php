@@ -5,6 +5,7 @@ function execute($sql) {
     global $conn;
     connectDB();
     $conn->query($sql);
+    return $conn->lastInsertId();
     disconnect();
 }
 
@@ -71,19 +72,10 @@ function create($table, $data = []) {
 
     $valuesNew = implode(', ', $values);
     $sql = "INSERT INTO {$table}({$columns}) VALUES({$valuesNew})";
-    execute($sql);
+    // echo $sql;
+    // exit;
+    return execute($sql);
 }
-
-// Update dữ liệu
-// function update($table, $data = [], $id) {
-
-// }
-
-// Xóa dữ liệu
-// function delete($table, $id) {
-//     $sql = "DELETE FROM {$table} WHERE id = $id";
-//     execute($sql);
-// }
 
 function check($table, $data) {
     $values = [];
@@ -94,6 +86,21 @@ function check($table, $data) {
     $valueNews = implode(' AND ', $values);
     $sql = "SELECT * FROM {$table} WHERE $valueNews";
     return executeSingle($sql, true);
+}
+
+function updateQuantity($table, $products, $id) {
+    $updateString = '';
+    foreach($products as $product) {
+        $updateString .= " WHEN id = ".$product['id']." THEN quantity - ".$_SESSION['cart'][$product['id']]." ";
+    }
+
+    execute("UPDATE {$table} SET quantity = CASE ".$updateString." END WHERE id IN($id)");
+}
+
+// Tìm kiếm sản phẩm
+function filter($table, $value) {
+    $products = executeSingle("SELECT * FROM {$table} WHERE name LIKE '%$value%'");
+    return $products;
 }
 
 ?>

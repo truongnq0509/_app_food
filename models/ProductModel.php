@@ -25,4 +25,10 @@ function getProductByIn($value) {
 	return $data;
 }
 
+// TIm kiếm sản phẩm
+function searchProduct($value) {
+	$data = filter(tableProduct, $value);
+	return $data;
+}
+
 ?>

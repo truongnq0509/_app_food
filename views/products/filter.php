@@ -31,21 +31,24 @@
 			<div class="row main-content-wrap">
 				<div class="col-lg-12 main-content pl-lg-6">
 					<nav class="toolbox sticky-toolbox sticky-content fix-top">
-						<form action="index.php?controller=category&action=filters" method="post" style="display: flex; align-items: center;">
-							<div class="toolbox-left">
-								<div class="toolbox-item toolbox-sort select-menu" style="margin-bottom: 0;">
-									<select name="option">
-										<option value="1" selected="selected">Giá: Tăng dần</option>
-										<option value="2">Giá: Giảm dần</option>
-										<option value="3">Tên: A-Z</option>
-										<option value="4">Tên: Z-A</option>
-										<option value="5">Mới nhất</option>
-										<option value="6">Cũ nhất</option>
-										<option value="7">Tồn kho giảm dần</option>
-									</select>
-								</div>
-								<button class="btn btn-primary" type="submit" style="padding: 0.95em 2.78em 0.95em;">Lọc</button>
-						</form>
+						<div class="toolbox-left">
+							<a href="#" class="toolbox-item left-sidebar-toggle btn btn-outline btn-primary btn-icon-right d-lg-none"><span>Filter</span><i class="p-icon-category-1 ml-md-1"></i></a>
+							<div class="toolbox-item toolbox-sort select-menu">
+								<label>Bộ Lọc</label>
+								<select name="orderby">
+									<option value="0" selected="selected">Món ăn nổi bật</option>
+									<option value="1">Giá: Tăng dần</option>
+									<option value="2">Giá: Giảm dần</option>
+									<option value="3">Tên: A-Z</option>
+									<option value="4">Tên: Z-A</option>
+									<option value="5">Mới nhất</option>
+									<option value="6">Cũ nhất</option>
+									<option value="6">Tồn kho giảm dần</option>
+								</select>
+							</div>
+						</div>
+						<div class="toolbox-right">
+						</div>
 					</nav>
 					<div class="row product-wrapper cols-lg-5 cols-2">
 						<?php if (!empty($products)) : foreach ($products as $product) : ?>

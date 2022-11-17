@@ -31,7 +31,7 @@
 				<div class="col-lg-12 main-content pl-lg-6">
 					<nav class="toolbox sticky-toolbox sticky-content fix-top">
 						<form action="index.php?controller=category&action=filters" method="post" style="display: flex; align-items: center;">
-							<div class="toolbox-left" >
+							<div class="toolbox-left">
 								<div class="toolbox-item toolbox-sort select-menu" style="margin-bottom: 0;">
 									<select name="option">
 										<option value="1" selected="selected">Giá: Tăng dần</option>

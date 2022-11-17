@@ -1,7 +1,7 @@
 <main class="main">
 	<div class="page-content">
 		<section class="container mt-10 pt-7 mb-7 appear-animate">
-			<h2 class="title-underline2 text-center mb-2"><span>Sản Phẩm Mới</span></h2>
+			<h2 class="title-underline2 text-center mb-2"><span>Kết quả tìm kiếm: <?= count($products)?> sản phẩm</span></h2>
 			<div class="tab tab-nav-center product-tab product-tab-type2">
 				<div class="tab-content">
 					<div class="tab-pane active" id="canned">

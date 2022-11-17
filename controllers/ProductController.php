@@ -35,4 +35,18 @@ function detail() {
 	]);
 }
 
+function search() {
+	global $data;
+	$products = searchProduct($_POST['search']);
+
+	view('layouts/index', [
+		'title' => 'Tìm Kiếm',
+		'content' => 'home/search',
+		$data = [
+			'products' => $products,
+		]
+	]);
+
+}
+
 ?>

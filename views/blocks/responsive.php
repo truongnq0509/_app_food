@@ -156,4 +156,5 @@
 <script>
 	Validator('#login-form')
 	Validator('#register-form')
+	Validator('#order-form')
 </script>
