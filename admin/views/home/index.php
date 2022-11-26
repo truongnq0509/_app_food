@@ -77,7 +77,7 @@
 			<div class="card radius-15">
 				<div class="card-body">
 					<div class="card-title">
-						<h4 class="mb-0">Top 5 món ăn bán chạy nhất</h4>
+						<h4 class="mb-0">Top 3 món ăn bán chạy nhất</h4>
 					</div>
 					<hr />
 					<div class="table-responsive">
@@ -93,66 +93,23 @@
 								</tr>
 							</thead>
 							<tbody>
+
+						
+							<?php foreach ($homes as $key => $value) :?>
 								<tr>
 									<td>1</td>
-									<td>Bánh tráng trộn</td>
-									<td>25.000 VNĐ</td>
-									<td>9.000 VNĐ</td>
+									<td><?php echo $value['name']?></td>
+									<td><?php echo $value['price']?> VNĐ</td>
+									<td><?php echo $value['sale']?> VNĐ</td>
 									<td>
-										<img src="assets/images/avatars/avatar-2.png" width="60" height="60" class="rounded shadow" alt="" />
+										<img src="../upload/<?php echo $value['image']?>" width="60" height="60" class="rounded shadow" alt="" />
 									</td>
 									<td>
 										<i class='font-30 bx bx-medal'></i>
 									</td>
 								</tr>
-								<tr>
-									<td>1</td>
-									<td>Bánh tráng trộn</td>
-									<td>25.000 VNĐ</td>
-									<td>9.000 VNĐ</td>
-									<td>
-										<img src="assets/images/avatars/avatar-2.png" width="60" height="60" class="rounded shadow" alt="" />
-									</td>
-									<td>
-										<i class='font-30 bx bx-medal'></i>
-									</td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>Bánh tráng trộn</td>
-									<td>25.000 VNĐ</td>
-									<td>9.000 VNĐ</td>
-									<td>
-										<img src="assets/images/avatars/avatar-2.png" width="60" height="60" class="rounded shadow" alt="" />
-									</td>
-									<td>
-										<i class='font-30 bx bx-medal'></i>
-									</td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>Bánh tráng trộn</td>
-									<td>25.000 VNĐ</td>
-									<td>9.000 VNĐ</td>
-									<td>
-										<img src="assets/images/avatars/avatar-2.png" width="60" height="60" class="rounded shadow" alt="" />
-									</td>
-									<td>
-										<i class='font-30 bx bx-medal'></i>
-									</td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>Bánh tráng trộn</td>
-									<td>25.000 VNĐ</td>
-									<td>9.000 VNĐ</td>
-									<td>
-										<img src="assets/images/avatars/avatar-2.png" width="60" height="60" class="rounded shadow" alt="" />
-									</td>
-									<td>
-										<i class='font-30 bx bx-medal'></i>
-									</td>
-								</tr>
+								<?php endforeach?>
+
 							</tbody>
 						</table>
 					</div>

@@ -3,6 +3,7 @@ define("tableUser", 'users');
 $data = null;
 
 function checkUser($input) {
+	// var_dump($input);die;
 	$isCheck = false;
 	$user = check(tableUser, $input);
 	if(!empty($user)) {
@@ -11,6 +12,8 @@ function checkUser($input) {
 	}
 	return $isCheck;
 }
+
+
 
 function addUser($input) {
 	create(tableUser, $input);

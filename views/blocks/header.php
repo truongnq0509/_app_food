@@ -58,8 +58,19 @@
 
 				<?php
 				if (!empty($_SESSION['user'])) : ?>
-					<a style="font-size: 16px; margin: 0 4px;" href="index.php?controller=account&action=logout" onclick="return confirm('Bạn có chắc muốn đăng xuất khỏi trái đất không 😂😂😂')">
-						<?php echo $_SESSION['user']['email']; ?>
+					<a style="font-size: 16px; margin: 0 4px;" href="index.php?controller=account&action=logout" onclick="return confirm('Bạn có chắc muốn đăng xuất khỏi trái đất không 😂😂😂')">					
+
+						<?php
+						// echo "<pre>";
+						// 	var_dump($_SESSION);die;
+							echo $_SESSION['user']['fullname'];
+					
+						if($_SESSION['user']['email'] == 'sonnvph19457@fpt.edu.vn'){							
+							echo "<a href='http://localhost:8080/devfood/dev-food/admin/'> Trang admin</a>";
+						} 
+											
+						?>
+						
 					</a>
 				<?php else : ?>
 					<a style="font-size: 24px; margin: 0 4px;" href="index.php?controller=account">

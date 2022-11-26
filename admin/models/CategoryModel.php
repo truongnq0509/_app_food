@@ -1,6 +1,7 @@
 <?php 
 
 define('tableCategory', 'categorys');
+define('tableProduct','products');
 
 function getAllCategory() {
 	$data = all(tableCategory);
@@ -8,7 +9,12 @@ function getAllCategory() {
 }
 
 function deleteCategory($id) {
+	movie(tableProduct,$id);
 	remove(tableCategory, $id);
+}
+
+function addCategory(){
+	create(tableCategory,$_POST);
 }
 
 

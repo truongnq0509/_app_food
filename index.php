@@ -10,7 +10,6 @@
 
     require "./controllers/$controllerName.php";
     $actionName();
-
     
     ?>
 </body>

@@ -29,6 +29,11 @@ function add() {
 	]);
 	
 }
+function saveadd(){
+
+	addCategory();
+	header("location: index.php?controller=category&action=index");
+}
 
 
 ?>

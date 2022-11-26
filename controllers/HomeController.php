@@ -7,6 +7,7 @@ function index() {
     global $data;
     $products = getAllProducts();
     $categorys = getAllCategory();
+    // var_dump($products);die;
     view('layouts/index', [
         'title' => 'Trang Chủ',
         'content' => 'home/index',

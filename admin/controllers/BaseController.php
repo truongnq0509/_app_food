@@ -9,6 +9,7 @@ function view($viewPath, $data = []) {
     }
 
     $viewPath = './' . VIEW_PATH_NAME . '/' . str_replace('.' , '/', $viewPath) . '.php';
+
     require $viewPath;
 }
 

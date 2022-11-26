@@ -6,7 +6,7 @@
 					<div class="card">
 						<div class="card-body">
 							<div>
-								<h5>Đơn Hàng Chưa Xác Nhận</h5>
+								<h5>Đơn Hàng </h5>
 								<hr />
 								<div class="table-responsive">
 									<table class="table table-striped table-bordered mb-0" id="table1">
@@ -40,7 +40,7 @@
 															</p>
 														</a>
 
-														<?php if ($order['status'] === 1) : ?>
+														<?php if ($order['status'] === 0) : ?>
 															<a href="index.php?controller=order&action=delete&id=<?= $order['id'] ?>" onclick="return confirm('Bạn có chắc muốn xóa đơn hàng này không !!!')">
 																<p id="table2-new-row-button" class="btn btn-light btn-sm mb-2">
 																	<i class="fadeIn animated bx bx-eraser"></i>

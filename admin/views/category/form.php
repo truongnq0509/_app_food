@@ -11,13 +11,13 @@
 								</div>
 								<hr />
 								<div class="form-body">
-									<form action="" method="post">
+									<form action="index.php?controller=category&action=saveadd" method="post" enctype="multipart/form-data">
 										<div class="form-group">
 											<label>Tên danh mục</label>
-											<input type="text" class="form-control radius-30" />
+											<input type="text" name="name" class="form-control radius-30" />
 										</div>
 	
-										<button type="button" class="btn btn-light px-5 radius-30">Thêm</button>
+										<button type="submit" class="btn btn-light px-5 radius-30">Thêm</button>
 	
 										<button type="reset" class="btn btn-light px-5 radius-30">Nhập lại</button>
 									</form>
