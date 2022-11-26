@@ -17,31 +17,28 @@
 					<div class="product-gallery">
 						<div class="product-single-carousel owl-carousel owl-theme owl-nav-inner row cols-1 gutter-no">
 							<figure class="product-image">
-								<img src="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" data-zoom-image="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" alt="1" width="800" height="1000">
+								<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
 							</figure>
 							<figure class="product-image">
-								<img src="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" data-zoom-image="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" alt="2" width="800" height="1000">
+							<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
 							</figure>
-							<figure class="product-image">
-								<img src="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" data-zoom-image="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" alt="3" width="800" height="1000">
+							<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
 							</figure>
-							<figure class="product-image">
-								<img src="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" data-zoom-image="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" alt="4" width="800" height="1000">
-							</figure>
+							<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
 						</div>
 						<div class="product-thumbs-wrap">
 							<div class="product-thumbs">
 								<div class="product-thumb active">
-									<img src="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" alt="product thumbnail" width="240" height="300">
+									<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
 								</div>
 								<div class="product-thumb">
-									<img src="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" alt="product thumbnail" width="240" height="300">
+									<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
 								</div>
 								<div class="product-thumb">
-									<img src="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" alt="product thumbnail" width="240" height="300">
+									<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
 								</div>
 								<div class="product-thumb">
-									<img src="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" alt="product thumbnail" width="240" height="300">
+									<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
 								</div>
 							</div>
 							<button class="thumb-up disabled"><i class="fas fa-chevron-left"></i></button>
@@ -104,7 +101,7 @@
 									<div class="comment">
 										<figure class="comment-media">
 											<a href="#">
-												<img src="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" width="100" height="100" alt="avatar">
+												<img src="./upload/<?php echo $product['image']?>" width="100" height="100" alt="avatar">
 											</a>
 										</figure>
 										<div class="comment-body mt-2 mt-sm-0">
@@ -141,7 +138,7 @@
 									<div class="comment">
 										<figure class="comment-media">
 											<a href="#">
-												<img src="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" width="100" height="100" alt="avatar">
+											<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
 											</a>
 										</figure>
 										<div class="comment-body mt-2 mt-sm-0">
@@ -191,7 +188,9 @@
 						<div class="product text-center">
 							<figure class="product-media">
 								<a href="index.php?controller=product&action=detail&id=<?= $item['id'] ?>">
-									<img src="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" alt="product" width="295" height="369" />
+
+								<img src="./upload/<?php echo $item['image']?>" width="800" height="1000">
+								
 								</a>
 								<div class="product-label-group">
 									<?php if ($item['sale']) : ?>
