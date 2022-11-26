@@ -38,7 +38,7 @@ function executeSingle($sql, $isSingle = false)
 /**
  * lấy tất cả bản ghi
  */
-function all($table, $limit = 12)
+function all($table, $limit = 100)
 {
     $sql = "SELECT * FROM $table LIMIT $limit";
     return executeSingle($sql);
@@ -120,7 +120,7 @@ function updateQuantity($table, $data = [])
     // Lấy ra sản phẩm trong đơn hàng
     $products = getIn($table, $productId);
 
-    
+
     foreach ($products as $product) {
         // insert order_detail
         $orderDetail = check('order_detail', [
