@@ -6,9 +6,10 @@
 				<div class="category category-ellipse mb-4 mb-md-0">
 					<a href="index.php?controller=category&id=<?= $category['id'] ?>">
 						<figure>
-							<img src="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" alt="category" width="160" height="161">
+							<img src="../upload/18_f806fca9937142eaba0fd0b8bfb953e2_large.jpg" alt="category" width="160" height="161">
 						</figure>
 					</a>
+					
 					<div class="category-content">
 						<h3 class="category-name"><a href="#"><?= $category['name'] ?></a>
 						</h3>
@@ -56,7 +57,7 @@
 									<div class="product shadow-media text-center">
 										<figure class="product-media">
 											<a href="index.php?controller=product&action=detail&id=<?= $product['id'] ?>">
-												<img src="<?= $product['image'] ?>" alt="product" width="295" height="369" />
+												<img src="./upload/<?php echo $product['image']?>" alt="product" width="295" height="369" />
 											</a>
 											<div class="product-action-vertical">
 												<a href="index.php?controller=cart&action=store&id=<?= $product['id'] ?>" class="btn-product-icon" title="Add to Cart">
