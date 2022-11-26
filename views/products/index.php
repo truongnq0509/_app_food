@@ -53,7 +53,8 @@
 									<div class="product shadow-media text-center">
 										<figure class="product-media">
 											<a href="index.php?controller=product&action=detail&id=<?= $product['id'] ?>">
-												<img src="<?= $product['image'] ?>" alt="product" width="295" height="369" />
+												<img src="./upload/<?php echo $product['image']?>" alt="product" width="295" height="369" />
+
 											</a>
 											<div class="product-action-vertical">
 												<a href="index.php?controller=cart&action=store&id=<?= $product['id'] ?>" class="btn-product-icon" title="Add to Cart">
