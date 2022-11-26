@@ -6,7 +6,7 @@
 					<div class="card">
 						<div class="card-body">
 							<div>
-								<h5>Đơn Hàng Chưa Xác Nhận</h5>
+								<h5>Đơn Hàng</h5>
 								<hr />
 								<div class="table-responsive">
 									<table class="table table-striped table-bordered mb-0" id="table1">
@@ -46,7 +46,7 @@
 																	<i class="fadeIn animated bx bx-eraser"></i>
 																</p>
 															</a>
-															<a href="index.php?controller=order&action=infor&id=<?= $order['id'] ?>" onclick="return confirm('Bạn có chắc muốn xóa đơn hàng này không !!!')">
+															<a href="index.php?controller=order&action=info&id=<?= $order['id'] ?>">
 																<p id="table2-new-row-button" class="btn btn-light btn-sm mb-2">
 																	<i class="fadeIn animated bx bx-info-circle"></i>
 																</p>
