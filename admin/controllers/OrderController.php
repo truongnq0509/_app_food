@@ -1,9 +1,10 @@
-<?php 
+<?php
 loadModel('OrderModel');
 $data = null;
 
 // Đơn hàng chưa xác nhận
-function no() {
+function no()
+{
 	global $data;
 	$orders = getOrderNo();
 
@@ -16,7 +17,8 @@ function no() {
 }
 
 // Đơn hàng đã xác nhận
-function done() {
+function done()
+{
 	global $data;
 	$orders = getOrderDone();
 	view('layouts/index', [
@@ -28,14 +30,15 @@ function done() {
 }
 
 // Form cập nhật đơn hàng
-function edit() {
+function edit()
+{
 	global $data;
 	$id = $_GET['id'];
 	$order = getOrder($id);
 	$orderDetail = getOrderDetail($id);
 
 	// Lấy ra id sản phẩm từ chi tiết đơn hàng
-	$productId = implode(', ', array_map(function($value) {
+	$productId = implode(', ', array_map(function ($value) {
 		return $value['product_id'];
 	}, $orderDetail));
 	$products = getProducts($productId);
@@ -51,16 +54,39 @@ function edit() {
 }
 
 // Cập nhập đơn hàng
-function update() {
+function update()
+{
 	$id = (int)$_GET['id'];
 	updateOrder($_POST, $id);
 	header('location: index.php?controller=order&action=done');
 }
 
-function delete() {
+function delete()
+{
 	$id = (int)$_GET['id'];
 	deleteOrder($id);
 	header('location: index.php?controller=order&action=done');
 }
 
-?>
+function info()
+{
+	global $data;
+	$id = $_GET['id'];
+	$order = getOrder($id);
+	$orderDetail = getOrderDetail($id);
+
+	// Lấy ra id sản phẩm từ chi tiết đơn hàng
+	$productId = implode(', ', array_map(function ($value) {
+		return $value['product_id'];
+	}, $orderDetail));
+	$products = getProducts($productId);
+
+	view('layouts/index', [
+		'content' => 'order/info',
+		$data = [
+			'order' => $order,
+			'orderDetail' => $orderDetail,
+			'products' => $products,
+		]
+	]);
+}

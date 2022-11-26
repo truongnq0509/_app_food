@@ -8,7 +8,7 @@
 						<div class="card-body">
 							<div class="media align-items-center">
 								<div class="media-body">
-									<h4 class="mb-0 font-weight-bold text-white">99</h4>
+									<h4 class="mb-0 font-weight-bold text-white"><?= count($orders) ?></h4>
 									<p class="mb-0 text-white">Đơn Hàng</p>
 								</div>
 								<div class="font-35 text-white"><i class='bx bx-cart-alt'></i>
@@ -22,7 +22,7 @@
 						<div class="card-body">
 							<div class="media align-items-center">
 								<div class="media-body">
-									<h4 class="mb-0 font-weight-bold text-white">99</h4>
+									<h4 class="mb-0 font-weight-bold text-white"><?= count($products) ?></h4>
 									<p class="mb-0 text-white">Sản Phẩm</p>
 								</div>
 								<div class="font-35 text-white"><i class='bx bx-cart'></i>
@@ -36,7 +36,7 @@
 						<div class="card-body">
 							<div class="media align-items-center">
 								<div class="media-body">
-									<h4 class="mb-0 font-weight-bold text-white">99</h4>
+									<h4 class="mb-0 font-weight-bold text-white"><?= count($users) ?></h4>
 									<p class="mb-0 text-white">Khách Hàng</p>
 								</div>
 								<div class="font-35 text-white"><i class='bx bx-user'></i>
@@ -64,7 +64,7 @@
 						<div class="card-body">
 							<div class="media align-items-center">
 								<div class="media-body">
-									<h4 class="mb-0 font-weight-bold text-white">20</h4>
+									<h4 class="mb-0 font-weight-bold text-white"><?= count($blogs) ?></h4>
 									<p class="mb-0 text-white">Blog</p>
 								</div>
 								<div class="font-35 text-white"><i class='bx bxl-blogger'></i>
@@ -93,66 +93,23 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td>1</td>
-									<td>Bánh tráng trộn</td>
-									<td>25.000 VNĐ</td>
-									<td>9.000 VNĐ</td>
-									<td>
-										<img src="assets/images/avatars/avatar-2.png" width="60" height="60" class="rounded shadow" alt="" />
-									</td>
-									<td>
-										<i class='font-30 bx bx-medal'></i>
-									</td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>Bánh tráng trộn</td>
-									<td>25.000 VNĐ</td>
-									<td>9.000 VNĐ</td>
-									<td>
-										<img src="assets/images/avatars/avatar-2.png" width="60" height="60" class="rounded shadow" alt="" />
-									</td>
-									<td>
-										<i class='font-30 bx bx-medal'></i>
-									</td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>Bánh tráng trộn</td>
-									<td>25.000 VNĐ</td>
-									<td>9.000 VNĐ</td>
-									<td>
-										<img src="assets/images/avatars/avatar-2.png" width="60" height="60" class="rounded shadow" alt="" />
-									</td>
-									<td>
-										<i class='font-30 bx bx-medal'></i>
-									</td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>Bánh tráng trộn</td>
-									<td>25.000 VNĐ</td>
-									<td>9.000 VNĐ</td>
-									<td>
-										<img src="assets/images/avatars/avatar-2.png" width="60" height="60" class="rounded shadow" alt="" />
-									</td>
-									<td>
-										<i class='font-30 bx bx-medal'></i>
-									</td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>Bánh tráng trộn</td>
-									<td>25.000 VNĐ</td>
-									<td>9.000 VNĐ</td>
-									<td>
-										<img src="assets/images/avatars/avatar-2.png" width="60" height="60" class="rounded shadow" alt="" />
-									</td>
-									<td>
-										<i class='font-30 bx bx-medal'></i>
-									</td>
-								</tr>
+								<?php
+								$count = 0;
+								foreach ($topProduct as $item) : $count++
+								?>
+									<tr>
+										<td><?= $count ?></td>
+										<td><?= $item['name'] ?></td>
+										<td><?= number_format($item['price'], 0, ',', '.') ?> VNĐ</td>
+										<td><?= number_format($item['sale'], 0, ',', '.') ?> VNĐ</td>
+										<td>
+											<img src="assets/images/avatars/avatar-2.png" width="60" height="60" class="rounded shadow" alt="" />
+										</td>
+										<td>
+											<i class='font-30 bx bx-medal'></i>
+										</td>
+									</tr>
+								<?php endforeach; ?>
 							</tbody>
 						</table>
 					</div>
