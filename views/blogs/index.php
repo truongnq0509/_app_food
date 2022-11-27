@@ -19,7 +19,7 @@
 							<article class="post post-border post-classic overlay-zoom">
 								<figure class="post-media">
 									<a href="index.php?controller=blog&action=detail&id=<?=$blog['id']?>">
-										<img src="<?= $blog['image']?>" width="500px" height="250px" alt="post" />
+										<img src="./upload/<?= $blog['image']?>" width="250px" height="250px" alt="post" />
 									</a>
 								</figure>
 								<div class="post-details text-center">
