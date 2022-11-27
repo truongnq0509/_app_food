@@ -6,7 +6,7 @@
 				<div class="category category-ellipse mb-4 mb-md-0">
 					<a href="index.php?controller=category&id=<?= $category['id'] ?>">
 						<figure>
-							<img src="https://product.hstatic.net/200000299178/product/2_fad2e5c563514574a03ddca3d5084809_1024x1024.jpg" alt="category" width="160" height="161">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjzupWnuFsS-btcV7bMOeYw6V30fnRRXuCFd1kGRfb5-FyDOzF7D5qVpNw8t_-X74GUKI&usqp=CAU" alt="category" width="160" height="161">
 						</figure>
 					</a>
 					<div class="category-content">
@@ -53,7 +53,7 @@
 									<div class="product shadow-media text-center">
 										<figure class="product-media">
 											<a href="index.php?controller=product&action=detail&id=<?= $product['id'] ?>">
-												<img src="./upload/<?php echo $product['image']?>" alt="product" width="295" height="369" />
+												<img src="./upload/<?php echo $product['image'] ?>" alt="product" width="295" height="369" />
 
 											</a>
 											<div class="product-action-vertical">

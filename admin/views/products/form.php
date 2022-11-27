@@ -54,10 +54,6 @@ $category = all('categorys');
                                             <label>Số lượng</label>
                                             <input name="quantity" type="text" class="form-control radius-30" />
                                         </div>
-                                        <div class="form-group">
-                                            <label>Ngày nhập</label>
-                                            <input name="created_date" type="text" class="form-control radius-30" />
-                                        </div>
 
 
 
