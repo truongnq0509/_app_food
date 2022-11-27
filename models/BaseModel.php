@@ -37,7 +37,7 @@ function executeSingle($sql, $isSingle = false) {
 /**
  * lấy tất cả bản ghi
  */
-function all($table, $limit = 12) {
+function all($table, $limit = 99) {
     $sql = "SELECT * FROM $table LIMIT $limit";
     return executeSingle($sql);
 }
@@ -102,5 +102,3 @@ function filter($table, $value) {
     $products = executeSingle("SELECT * FROM {$table} WHERE name LIKE '%$value%'");
     return $products;
 }
-
-?>

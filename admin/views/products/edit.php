@@ -22,7 +22,7 @@ $category = all('categorys');
                                     <hr />
 
 
-                                 
+
                                     <div class="form-body">
                                         <div class="form-group">
                                             <label>danh mục</label>
@@ -34,35 +34,31 @@ $category = all('categorys');
                                         </div>
                                         <div class="form-group">
                                             <label>Tiêu đề</label>
-                                            <input type="text" name="name" value="<?php echo $products['name']?>" class="form-control radius-30" />
+                                            <input type="text" name="name" value="<?php echo $products['name'] ?>" class="form-control radius-30" />
                                         </div>
                                         <div class="form-group">
                                             <label>Giá</label>
-                                            <input type="text" name="price" value="<?php echo $products['price']?>" class="form-control radius-30" />
+                                            <input type="text" name="price" value="<?php echo $products['price'] ?>" class="form-control radius-30" />
                                         </div>
                                         <div class="form-group">
                                             <label>Giảm giá</label>
-                                            <input type="text" name="sale" value="<?php echo $products['sale']?>" class="form-control radius-30" />
+                                            <input type="text" name="sale" value="<?php echo $products['sale'] ?>" class="form-control radius-30" />
                                         </div>
                                         <div class="form-group">
                                             <label>Ảnh</label>
                                             <br>
                                             <input name="image" type="file" />
-                                            <input type="text" name="hinhcu" value="<?php echo $products['image']?>" hidden>
+                                            <input type="text" name="hinhcu" value="<?php echo $products['image'] ?>" hidden>
                                         </div>
                                         <div class="form-group">
                                             <label>Miêu tả</label>
-                                            <textarea name="description" class="form-control radius-30" rows="3" cols="3"><?php echo $products['description']?></textarea>
+                                            <textarea name="description" class="form-control radius-30" rows="3" cols="3"><?php echo $products['description'] ?></textarea>
                                         </div>
                                         <div class="form-group">
                                             <label>Số lượng</label>
-                                            <input name="quantity" value="<?php echo $products['quantity']?>" type="text" class="form-control radius-30" />
+                                            <input name="quantity" value="<?php echo $products['quantity'] ?>" type="text" class="form-control radius-30" />
                                         </div>
-                                        <div class="form-group">
-                                            <label>Ngày nhập</label>
-                                            <input name="created_date" value="<?php echo $products['created_date']?>" type="text" class="form-control radius-30" />
-                                        </div>
-                                        <input type="text" name="id" value="<?php echo $products['id']?>" hidden>
+                                        <input type="text" name="id" value="<?php echo $products['id'] ?>" hidden>
 
 
 

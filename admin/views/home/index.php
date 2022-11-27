@@ -50,20 +50,6 @@
 						<div class="card-body">
 							<div class="media align-items-center">
 								<div class="media-body">
-									<h4 class="mb-0 font-weight-bold text-white">9999999</h4>
-									<p class="mb-0 text-white">Doanh Số</p>
-								</div>
-								<div class="font-35 text-white"><i class='bx bx-money'></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-lg-4">
-					<div class="card radius-15">
-						<div class="card-body">
-							<div class="media align-items-center">
-								<div class="media-body">
 									<h4 class="mb-0 font-weight-bold text-white"><?= count($blogs) ?></h4>
 									<p class="mb-0 text-white">Blog</p>
 								</div>

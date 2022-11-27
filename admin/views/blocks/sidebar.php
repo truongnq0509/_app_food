@@ -66,8 +66,6 @@
 			<ul>
 				<li> <a href="index.php?controller=user"><i class="bx bx-right-arrow-alt"></i>Danh Sách</a>
 				</li>
-				<li> <a href="index.php?controller=user&action=add"><i class="bx bx-right-arrow-alt"></i>Thêm Mới</a>
-				</li>
 			</ul>
 		</li>
 		<li>

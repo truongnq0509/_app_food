@@ -38,9 +38,10 @@ function executeSingle($sql, $isSingle = false)
 /**
  * lấy tất cả bản ghi
  */
-function all($table, $limit = 100)
+function all($table, $limit = 99)
 {
     $sql = "SELECT * FROM $table LIMIT $limit";
+    // var_dump($sql);die;
     return executeSingle($sql);
 }
 
@@ -48,6 +49,7 @@ function all($table, $limit = 100)
 function find($table, $id)
 {
     $sql = "SELECT * FROM $table WHERE id = $id";
+    // var_dump($sql);die;
     return executeSingle($sql, true);
 }
 
@@ -73,8 +75,10 @@ function create($table, $data = [])
 
     $valuesNew = implode(', ', $values);
     $sql = "INSERT INTO {$table}({$columns}) VALUES({$valuesNew})";
+    // var_dump($sql);die;
     execute($sql);
 }
+
 
 // Update dữ liệu
 function updateData($table, $id, $data = [])
@@ -86,6 +90,7 @@ function updateData($table, $id, $data = [])
 
     $valuesNew = implode(', ', $values);
     $sql = "UPDATE {$table} SET {$valuesNew} WHERE id = {$id}";
+    // var_dump($sql);die;
     execute($sql);
 }
 
@@ -93,6 +98,14 @@ function updateData($table, $id, $data = [])
 function remove($table, $id)
 {
     $sql = "DELETE FROM {$table} WHERE id = $id";
+
+    execute($sql);
+}
+
+function movie($table, $id)
+{
+    $sql = "UPDATE {$table} SET category_id = 13 WHERE category_id = $id";
+
     execute($sql);
 }
 
