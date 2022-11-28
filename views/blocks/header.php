@@ -66,7 +66,7 @@
 							echo $_SESSION['user']['fullname'];
 					
 						if($_SESSION['user']['email'] == 'sonnvph19457@fpt.edu.vn'){							
-							echo "<a href='http://localhost:8080/devfood/dev-food/admin/'> Trang admin</a>";
+							echo "<a href='http://localhost:8080/php1/dev-food/admin/'> Trang admin</a>";
 						} 
 											
 						?>
