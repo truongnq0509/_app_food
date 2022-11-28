@@ -60,12 +60,12 @@
 					</div>
 				</div>
 
-				<div class="col-12 col-lg-4">
+				<!-- <div class="col-12 col-lg-4">
 					<div class="card radius-15">
 						<div class="card-body">
 							<div class="media align-items-center">
 								<div class="media-body">
-									<h4 class="mb-0 font-weight-bold text-white"><?php echo $total[0][0];?> VNĐ</h4>
+									<h4 class="mb-0 font-weight-bold text-white">VNĐ</h4>
 									<p class="mb-0 text-white">Tổng Doanh Thu</p>
 								</div>
 								<div class="font-35 text-white"><i class='bx bxl-blogger'></i>
@@ -73,7 +73,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 			</div>
 			<div class="card radius-15">
@@ -105,7 +105,7 @@
 										<td><?= number_format($item['price'], 0, ',', '.') ?> VNĐ</td>
 										<td><?= number_format($item['sale'], 0, ',', '.') ?> VNĐ</td>
 										<td>
-											<img src="../upload/<?php echo $item['image']?>" width="60" height="60" class="rounded shadow" alt="" />
+											<img src="../upload/<?php echo $item['image'] ?>" width="60" height="60" class="rounded shadow" alt="" />
 										</td>
 										<td>
 											<i class='font-30 bx bx-medal'></i>

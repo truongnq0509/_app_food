@@ -13,7 +13,7 @@ function index()
     $blogs = getAllBlog();
     $users = getAllUser();
     $topProduct = getTop5();
-    $total = totalOrder();
+    // $total = totalOrder();
 
     view('layouts/index', [
         'content' => 'home/index',
@@ -24,7 +24,7 @@ function index()
             'orders' => $orders,
             'blogs' => $blogs,
             'users' => $users,
-            'total' => $total,
+            // 'total' => $total,
         ]
     ]);
 }

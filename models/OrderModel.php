@@ -25,7 +25,6 @@ function addOrderDetail($input) {
 		'product_id' => $input['product_id'],
 		'price' => $input['price'],
 		'quantity' => $input['quantity'],
-		'total_money' => $input['price']
 	]);
 	return $orderDetail;
 }
@@ -33,7 +32,3 @@ function addOrderDetail($input) {
 function updateQuantityProduct($products, $id) {
 	updateQuantity(tableProduct, $products, $id);
 }
-
-
-
-?>

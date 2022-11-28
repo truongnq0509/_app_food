@@ -21,6 +21,18 @@ function Validator(formSelector) {
                 ? undefined
                 : "Vui lòng nhập chính xác email của bạn";
         },
+        number(value) {
+            var regex = /^[-+]?[0-9]+$/;
+            return regex.test(value)
+                ? undefined
+                : "Vui lòng nhập nhập số";
+        },
+        phone(value) {
+            var regex = /^[-+]?[0-9]+$/;
+            return regex.test(value)
+                ? undefined
+                : "Vui lòng nhập phone";
+        },
         checked(elementChecked) {
             return elementChecked ? undefined : "Vui lòng chọn trường này";
         },

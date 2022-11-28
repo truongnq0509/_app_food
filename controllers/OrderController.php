@@ -47,7 +47,7 @@ function add()
 			foreach ($products as $product) {
 				if ($product['sale']) {
 					$price = $product['sale'];
-				} else {		
+				} else {
 					$price = $product['price'];
 				}
 				addOrderDetail([

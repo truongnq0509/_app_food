@@ -28,18 +28,18 @@
 
 </head>
 
-<body class="class=bg-theme bg-theme1">
+<body class="bg-theme bg-theme2">
     <div class="wrapper">
         <?php
-            require_once './views/blocks/header.php';
-            view($content, $data[0]);
-            require_once './views/blocks/sidebar.php';
+        require_once './views/blocks/header.php';
+        view($content, $data[0]);
+        require_once './views/blocks/sidebar.php';
         ?>
     </div>
-    <?php 
-        require_once './views/blocks/theme.php';
+    <?php
+    require_once './views/blocks/theme.php';
     ?>
-    
+
 
     <script src="../public/back-end/assets/js/jquery.min.js"></script>
     <script src="../public/back-end/assets/js/popper.min.js"></script>
@@ -59,9 +59,10 @@
     <script src="../public/back-end/assets/js/index.js"></script>
     <!-- App JS -->
     <script src="../public/back-end/assets/js/app.js"></script>
+    <script src="../public/back-end/assets/js/validator.js"></script>
     <script>
-        new PerfectScrollbar('.dashboard-social-list');
-        new PerfectScrollbar('.dashboard-top-countries');
+        Validator('#product-form')
+        Validator('#product-form--edit')
     </script>
 </body>
 
