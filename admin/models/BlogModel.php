@@ -1,22 +1,20 @@
 <?php
-define('tableNameBlog','blogs');
+define('tableNameBlog', 'blogs');
 
-function getAllBlog(){
-     $data = all(tableNameBlog);
+function getAllBlog()
+{
+    $data = all(tableNameBlog);
     return $data;
 }
-function getOneBlog(){
+function getOneBlog()
+{
     $id = $_GET['id'];
-    return find(tableNameBlog,$id);
+    return find(tableNameBlog, $id);
 }
 
-function insert(){
-    // echo "<pre>";
-    // var_dump($_FILES);
-    // var_dump($_POST);die;
-
-    create(tableNameBlog,[
-        'user_id' => $_POST['user_id'],
+function insert()
+{
+    create(tableNameBlog, [
         'title' => $_POST['title'],
         'image' => $_FILES['image']['name'],
         'description' => $_POST['description'],
@@ -32,7 +30,7 @@ function deleteBlog()
 }
 
 
-function updateBlog()
+function updateBlog($input)
 {
     global $image;
 
@@ -44,21 +42,11 @@ function updateBlog()
         move_uploaded_file($_FILES["image"]["tmp_name"], "../upload/" . $_FILES["image"]["name"]);
     }
 
-    $id = $_POST['user_id'];
-
+    $id = $input['id'];
     updateData(tableNameBlog, $id, [
-        'user_id' => $_POST['user_id'],
         'title' => $_POST['title'],
         'image' => $image,
         'description' => $_POST['description'],
         'created_date' => date("Y-m-d", time()),
     ]);
 }
-
-
-
-
-
-
-
-?>

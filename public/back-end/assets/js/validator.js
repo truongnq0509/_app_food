@@ -33,6 +33,11 @@ function Validator(formSelector) {
                 ? undefined
                 : "Vui lòng nhập phone";
         },
+        min(min) {
+            return function (value) {
+                return value.length >= min ? undefined : `Vui lòng nhập tối thiểu ${min} kí tự`
+            }
+        },
         checked(elementChecked) {
             return elementChecked ? undefined : "Vui lòng chọn trường này";
         },

@@ -3,65 +3,54 @@ loadModel('BlogModel');
 loadModel('UserModel');
 
 
-function index(){
+function index()
+{
     global $data;
-    $blog = getAllBlog();
+    $blogs = getAllBlog();
 
-    view('layouts/index',[
+    view('layouts/index', [
         'content' => 'blogs/index',
-            $data = [
-                'blogs' => $blog
-            ]
-        ]);
-
-    
-}
-function add(){
-    global $data;
-
-    view('layouts/index',[
-        'content' => 'blogs/form',
         $data = [
-
+            'blogs' => $blogs
         ]
     ]);
 }
+function add()
+{
+    global $data;
+    view('layouts/index', [
+        'content' => 'blogs/form',
+        $data = []
+    ]);
+}
 
-function saveadd(){
+function saveadd()
+{
     insert();
     header("location: index.php?controller=blog");
 }
 
-function delete(){
+function delete()
+{
     deleteBlog();
     header("location: index.php?controller=blog");
 }
-function edit(){
+function edit()
+{
     global $data;
     $blog = getOneBlog();
     $user = getAllUser();
-    // echo "<pre>";
-    // var_dump($user);
-    // var_dump($blog);die;
-
-    view('layouts/index',[
+    view('layouts/index', [
         'content' => 'blogs/edit',
-       $data = [
+        $data = [
             'blog' => $blog,
             'user' => $user
         ]
     ]);
 }
 
-function update(){
-    
-    updateBlog();
+function update()
+{
+    updateBlog($_POST);
     header("location: index.php?controller=blog");
-
 }
-
-
-
-
-
-?>
