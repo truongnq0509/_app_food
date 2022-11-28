@@ -28,3 +28,25 @@ function index()
         ]
     ]);
 }
+
+function login()
+{
+    global $data;
+    $_POST['password'] = md5($_POST['password']);
+    $_POST['role_id'] = 1;
+
+    $user = getAdmin($_POST);
+
+    if (!empty($user)) {
+        $_SESSION['user'] = $user;
+    }
+    echo '<script>window.location.assign("index.php")</script>';
+}
+
+function logout()
+{
+    if (!empty($_SESSION['user'])) {
+        unset($_SESSION['user']);
+        echo '<script>window.location.assign("index.php")</script>';
+    }
+}

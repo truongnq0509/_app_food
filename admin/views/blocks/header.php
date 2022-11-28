@@ -21,8 +21,7 @@
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
 						<a class="dropdown-item" href="#"><i class="bx bx-user"></i><span>Thông Tin</span></a>
-						<!-- <a class="dropdown-item" href="#"><i class="bx bx-log-in"></i><span>Login</span></a> -->
-						<div class="dropdown-divider mb-0"></div> <a class="dropdown-item" href="http://localhost:8080/php1/dev-food/index.php"><i class="bx bx-power-off"></i><span>Logout</span></a>
+						<div class="dropdown-divider mb-0"></div> <a class="dropdown-item" href="index.php?controller=home&action=logout"><i class="bx bx-power-off"></i><span>Logout</span></a>
 					</div>
 
 				</li>

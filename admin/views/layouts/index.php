@@ -28,12 +28,16 @@
 
 </head>
 
-<body class="bg-theme bg-theme2">
+<body class="bg-theme bg-theme6">
     <div class="wrapper">
         <?php
-        require_once './views/blocks/header.php';
-        view($content, $data[0]);
-        require_once './views/blocks/sidebar.php';
+        if (!isset($_SESSION['user'])) {
+            view('login/index');
+        } else {
+            require_once './views/blocks/header.php';
+            view($content, $data[0]);
+            require_once './views/blocks/sidebar.php';
+        }
         ?>
     </div>
     <?php
@@ -67,6 +71,7 @@
         Validator('#category-form--edit')
         Validator('#blog-form')
         Validator('#blog-form--edit')
+        Validator('#login-form')
     </script>
 </body>
 
