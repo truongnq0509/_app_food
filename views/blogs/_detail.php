@@ -19,7 +19,7 @@
 						<article class="post post-single">
 							<figure class="post-media">
 								<a href="#">
-									<img src="<?= $blog['image']?>" width="905" height="500" alt="post" />
+									<img src="./upload/<?= $blog['image']?>" width="905" height="500" alt="post" />
 								</a>
 							</figure>
 							<div class="post-details mt-6">

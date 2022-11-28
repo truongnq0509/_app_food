@@ -1,5 +1,6 @@
 <?php
 loadModel('HomeModel');
+loadModel('DetailModel');
 $data = null;
 
 function index()
@@ -12,6 +13,7 @@ function index()
     $blogs = getAllBlog();
     $users = getAllUser();
     $topProduct = getTop5();
+    $total = totalOrder();
 
     view('layouts/index', [
         'content' => 'home/index',
@@ -22,6 +24,7 @@ function index()
             'orders' => $orders,
             'blogs' => $blogs,
             'users' => $users,
+            'total' => $total,
         ]
     ]);
 }
