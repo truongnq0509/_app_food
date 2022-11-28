@@ -6,14 +6,18 @@ $data = null;
 function index()
 {
     global $data;
-
+    $totalMoney = 0;
     $products = getAllProduct();
     $category = getAllCategory();
     $orders = getAllOrder();
     $blogs = getAllBlog();
     $users = getAllUser();
     $topProduct = getTop5();
-    // $total = totalOrder();
+    $orderDone = getOrderDone();
+
+    foreach ($orderDone as $order) {
+        $totalMoney += $order['total_money'];
+    }
 
     view('layouts/index', [
         'content' => 'home/index',
@@ -24,7 +28,7 @@ function index()
             'orders' => $orders,
             'blogs' => $blogs,
             'users' => $users,
-            // 'total' => $total,
+            'totalMoney' => $totalMoney,
         ]
     ]);
 }
