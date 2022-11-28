@@ -4,18 +4,20 @@
 			<div class="card radius-15">
 				<div class="card-body p-5">
 					<div class="card-title d-flex align-items-center">
-						<h4 class="mb-0 text-white">THÊM DANH MỤC</h4>
+						<h4 class="mb-0 text-white">CẬP NHẬT DANH MỤC</h4>
 					</div>
 					<hr />
 					<div class="form-body">
-						<form action="index.php?controller=category&action=saveadd" method="post" enctype="multipart/form-data" id="category-form">
+						<form action="index.php?controller=category&action=update" method="post" enctype="multipart/form-data" id="category-form--edit">
 							<div class="form-group">
 								<label>Danh mục</label>
-								<input type="text" name="name" id="name" rules="required" class="form-control" />
+								<input type="text" name="name" id="name" rules="required" class="form-control" value="<?= $category['name'] ?>" />
 								<span class="form-message"></span>
 							</div>
 
-							<button type="submit" class="btn btn-light px-5">Thêm</button>
+							<input type="text" name="id" value="<?= $category['id'] ?>" hidden />
+
+							<button type="submit" class="btn btn-light px-5">Cập nhật</button>
 							<button type="reset" class="btn btn-light px-5">Nhập lại</button>
 						</form>
 					</div>

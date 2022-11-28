@@ -40,12 +40,6 @@ function deleteProduct()
 
 function updateProduct()
 {
-    global $image;
-
-    // echo "<pre>";
-    // var_dump($_FILES);
-    // var_dump($_POST);die;
-
     $image = $_FILES['image']['name'];
     // var_dump($image);die;
 

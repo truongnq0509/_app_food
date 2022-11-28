@@ -63,6 +63,8 @@
     <script>
         Validator('#product-form')
         Validator('#product-form--edit')
+        Validator('#category-form')
+        Validator('#category-form--edit')
     </script>
 </body>
 

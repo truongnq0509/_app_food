@@ -42,12 +42,8 @@ function delete()
 
 function edit()
 {
-    // var_dump($_GET);die;
     global $data;
     $product = getOneProduct();
-    // echo "<pre>";
-    // var_dump($product);die;
-
     view('layouts/index', [
         'content' => 'products/edit',
         $data = [
@@ -58,15 +54,6 @@ function edit()
 
 function update()
 {
-    // global $oldImage;
-    // $oldImage = $_POST['hinhcu'];
-    // if($oldImage = ""){
-    //     $oldImage = $_POST['hinhcu'];
-    // } else{
-    //     move_uploaded_file($_FILES["image"]["tmp_name"], "../upload/" . $_FILES["image"]["name"]);
-    // }
-    // var_dump($_POST['hinhcu']);
-    // var_dump($_POST);die;
     updateProduct();
     header("location: index.php?controller=product&action=index");
 }
