@@ -18,16 +18,11 @@ function detail() {
 	global $data;
 	$id = $_GET['id'];
 	$blog = getBlog($id);
-	$admin = getAdmin($blog['user_id']);
 	view('layouts/index', [
 		'title' => 'Chi Tiết Bài Viết',
 		'content' => 'blogs/_detail',
 		$data = [
 			'blog' => $blog,
-			'admin' => $admin
 		]
 	]);
 }
-
-
-?>

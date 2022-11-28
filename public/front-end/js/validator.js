@@ -21,9 +21,21 @@ function Validator(formSelector) {
                 ? undefined
                 : "Vui lòng nhập chính xác email của bạn";
         },
+        phone(value) {
+            var regex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+            return regex.test(value)
+                ? undefined
+                : "Vui lòng nhập chính xác SĐT của bạn";
+        },
+        min(min) {
+            return function (value) {
+                return value.length >= min ? undefined : `Vui lòng nhập tối thiểu ${min} kí tự`
+            }
+        },
         checked(elementChecked) {
             return elementChecked ? undefined : "Vui lòng chọn trường này";
         },
+
     };
 
     if (formElement) {

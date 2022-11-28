@@ -33,7 +33,7 @@
 									</div>
 
 									<div class="form-group">
-										<input type="password" id="password" name="password" rules="required" placeholder="Password" class="form-control">
+										<input type="password" id="password" name="password" rules="required|min:6" placeholder="Password" class="form-control">
 										<span class="form-message"></span>
 									</div>
 									<input class="btn btn-dark btn-block" type="submit" value="Đăng Ký" />
@@ -49,22 +49,22 @@
 									<input type="text" id="role_id" name="role_id" value="2" hidden style="display: none;">
 
 									<div class="form-group">
-										<input type="email" id="email" name="email" rules="required" placeholder="Email...">
+										<input type="email" id="email" name="email" rules="required|email" placeholder="Email...">
 										<span class="form-message"></span>
 									</div>
 
 									<div class="form-group">
-										<input type="password" id="password" name="password" rules="required" placeholder="Password">
+										<input type="password" id="password" name="password" rules="required|min:6" placeholder="Password">
 										<span class="form-message"></span>
 									</div>
 
 									<div class="form-group">
-										<input type="text" id="phone" name="phone" rules="required" placeholder="Phone">
+										<input type="text" id="phone" name="phone" rules="required|phone" placeholder="Phone">
 										<span class="form-message"></span>
 									</div>
 
 									<div class="form-group">
-										<textarea type="" id="address" name="address" rules="required" placeholder="Address"></textarea>
+										<textarea type="" id="address" name="address" rules="required|min:10" placeholder="Address"></textarea>
 										<span class="form-message"></span>
 									</div>
 									<button class="btn btn-dark btn-block form-submit" type="submit">Đăng Ký</button>

@@ -19,20 +19,20 @@
 						<article class="post post-single">
 							<figure class="post-media">
 								<a href="#">
-									<img src="./upload/<?= $blog['image']?>" width="905" height="500" alt="post" />
+									<img src="./upload/<?= $blog['image'] ?>" width="905" height="500" alt="post" />
 								</a>
 							</figure>
 							<div class="post-details mt-6">
 								<div class="post-meta">
 									by
-									<a href="#" title="Posts by John Doe" class="text-uppercase ml-1 mr-1" rel="author"><?= $admin['fullname']?></a>
+									<a href="#" title="Posts by John Doe" class="text-uppercase ml-1 mr-1" rel="author">Admin</a>
 									on
-									<span class="post-date ml-1"><a href="#"><?= $blog['created_date']?></a></span>
+									<span class="post-date ml-1"><a href="#"><?= $blog['created_date'] ?></a></span>
 									<span class="divider mr-2 ml-2"></span>
 								</div>
-								<h4 class="post-title"><?= $blog['title']?></h4>
+								<h4 class="post-title"><?= $blog['title'] ?></h4>
 								<p>
-									<?= $blog['description']?>
+									<?= $blog['description'] ?>
 								</p>
 							</div>
 						</article>

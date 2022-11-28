@@ -14,23 +14,23 @@
 							<input type="text" id="fullname" name="fullname" rules="required" placeholder="Người Nhận" class="form-control" value="<?php echo !empty($_SESSION['user']) ? $_SESSION['user']['fullname'] : '' ?>">
 							<span class="form-message" style="color: #ff0000;"></span>
 						</div>
-						<input type="text" id="user_id" name="user_id" style="display: none;"  value="<?php echo !empty($_SESSION['user']) ? $_SESSION['user']['id'] : '' ?>" >
+						<input type="text" id="user_id" name="user_id" style="display: none;" value="<?php echo !empty($_SESSION['user']) ? $_SESSION['user']['id'] : '' ?>">
 
 						<div class="row">
-							<div class="col-xs-6 form-group" >
+							<div class="col-xs-6 form-group">
 								<label>Email</label>
 								<input type="text" class="form-control" rules="required|email" name="email" placeholder="Email" value="<?php echo !empty($_SESSION['user']) ? $_SESSION['user']['email'] : '' ?>" />
 								<span class="form-message" style="color: #ff0000;"></span>
 							</div>
 							<div class="col-xs-6 form-group">
 								<label>Phone</label>
-								<input type="text" class="form-control"  rules="required" name="phone" placeholder="SĐT" value="<?php echo !empty($_SESSION['user']) ? $_SESSION['user']['phone'] : '' ?>"/>
+								<input type="text" class="form-control" rules="required|phone" name="phone" placeholder="SĐT" value="<?php echo !empty($_SESSION['user']) ? $_SESSION['user']['phone'] : '' ?>" />
 								<span class="form-message" style="color: #ff0000;"></span>
 							</div>
 						</div>
 						<div class="form-group">
 							<label>Địa Chỉ</label>
-							<input type="text" class="form-control" name="address" rules="required" placeholder="Địa Chỉ" value="<?php echo !empty($_SESSION['user']) ? $_SESSION['user']['address'] : '' ?>"  />
+							<input type="text" class="form-control" name="address" rules="required" placeholder="Địa Chỉ" value="<?php echo !empty($_SESSION['user']) ? $_SESSION['user']['address'] : '' ?>" />
 							<span class="form-message" style="color: #ff0000;"></span>
 						</div>
 						<div class="form-group">

@@ -27,12 +27,6 @@ function Validator(formSelector) {
                 ? undefined
                 : "Vui lòng nhập nhập số";
         },
-        phone(value) {
-            var regex = /^[-+]?[0-9]+$/;
-            return regex.test(value)
-                ? undefined
-                : "Vui lòng nhập phone";
-        },
         min(min) {
             return function (value) {
                 return value.length >= min ? undefined : `Vui lòng nhập tối thiểu ${min} kí tự`
