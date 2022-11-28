@@ -41,11 +41,15 @@
 											</td>
 											<td>
 												<a href="index.php?controller=product&action=edit&id=<?php echo $value['id'] ?>">
-													<p id="table2-new-row-button" class="btn btn-light btn-sm mb-2">Sửa</p>
+													<p id="table2-new-row-button" class="btn btn-light btn-sm mb-2">
+														<i class="fadeIn animated bx bx-edit-alt"></i>
+													</p>
 												</a>
 
 												<a href="index.php?controller=product&action=delete&id=<?php echo $value['id'] ?>">
-													<p id="table2-new-row-button" onclick=" return confirm('Bạn có muốn xóa không !')" class="btn btn-light btn-sm mb-2">Xóa</p>
+													<p id="table2-new-row-button" onclick=" return confirm('Bạn có muốn xóa không !')" class="btn btn-light btn-sm mb-2">
+														<i class="fadeIn animated bx bx-eraser"></i>
+													</p>
 												</a>
 											</td>
 										</tr>

@@ -24,11 +24,15 @@
 											<td><?= $category['name']; ?></td>
 											<td>
 												<a href="index.php?controller=category&action=edit&id=<?= $category['id'] ?>">
-													<p id="table2-new-row-button" class="btn btn-light btn-sm mb-2">Sửa</p>
+													<p id="table2-new-row-button" class="btn btn-light btn-sm mb-2">
+														<i class="fadeIn animated bx bx-edit-alt"></i>
+													</p>
 												</a>
 
 												<a href="index.php?controller=category&action=delete&id=<?= $category['id'] ?>" onclick="return confirm('Có muốn xóa không !!!')">
-													<p id="table2-new-row-button" class="btn btn-light btn-sm mb-2">Xóa</p>
+													<p id="table2-new-row-button" class="btn btn-light btn-sm mb-2">
+														<i class="fadeIn animated bx bx-eraser"></i>
+													</p>
 												</a>
 											</td>
 										</tr>

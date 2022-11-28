@@ -34,7 +34,9 @@
 												<td><?php echo $value['email'] ?></td>
 												<td>
 													<a href="index.php?controller=user&action=delete&id=<?php echo $value['id'] ?>">
-														<p id="table2-new-row-button" class="btn btn-light btn-sm mb-2" onclick="return confirm('Bạn có muốn xóa không !')">Xóa</p>
+														<p id="table2-new-row-button" class="btn btn-light btn-sm mb-2" onclick="return confirm('Bạn có muốn xóa không !')">
+															<i class="fadeIn animated bx bx-eraser"></i>
+														</p>
 													</a>
 												</td>
 											</tr>

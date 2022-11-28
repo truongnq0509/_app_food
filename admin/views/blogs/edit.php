@@ -23,6 +23,11 @@
                                     <input type="text" name="hinhcu" value="<?php echo $blog['image'] ?>" hidden>
                                 </div>
                                 <div class="form-group">
+                                    <label>Ngày Đăng</label>
+                                    <input type="text" class="form-control" value="<?= $blog['created_date'] ?>" name="created_date">
+                                </div>
+
+                                <div class="form-group">
                                     <label>Miêu tả</label>
                                     <textarea name="description" id="description" rules="required|min:100" class="form-control" rows="3" cols="3"><?php echo $blog['description'] ?></textarea>
                                     <span class="form-message"></span>

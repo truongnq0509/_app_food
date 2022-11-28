@@ -44,9 +44,9 @@ function updateBlog($input)
 
     $id = $input['id'];
     updateData(tableNameBlog, $id, [
-        'title' => $_POST['title'],
+        'title' => $input['title'],
         'image' => $image,
-        'description' => $_POST['description'],
-        'created_date' => date("Y-m-d", time()),
+        'description' => $input['description'],
+        'created_date' => $input['created_date'],
     ]);
 }
