@@ -12,7 +12,7 @@
 							<h4 class="mb-2"><?= $order['fullname'] ?></h4>
 							<h6 class="mb-2">Ngày Đặt: <?= $order['order_date'] ?></h6>
 							<h6 class="mb-2">Người Giao: Nguyễn Quang Trường</h6>
-							<h6 class="mb-2">Phương Thức Vận Chuyển: Thanh Toán Khi Nhận Hàng</h5>
+							<h6 class="mb-2">Phương Thức Thanh Toán: Thanh Toán Khi Nhận Hàng</h5>
 						</div>
 						<hr />
 						<div class="table-responsive">

@@ -65,7 +65,7 @@ function delete()
 {
 	$id = (int)$_GET['id'];
 	deleteOrder($id);
-	header('location: index.php?controller=order&action=done');
+	header('location: index.php?controller=order&action=no');
 }
 
 function info()
