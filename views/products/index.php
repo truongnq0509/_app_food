@@ -1,20 +1,8 @@
 <main class="main">
 	<div class="page-header cph-header pl-4 pr-4" style="background-color: #fff7ec">
-		<h1 class="page-title font-weight-light text-capitalize">Panda Shop</h1>
+		<h1 class="page-title font-weight-light text-capitalize">Dev Food</h1>
 		<div class="category-container row justify-content-center cols-2 cols-xs-3 cols-sm-4 cols-md-6 pt-6">
-			<?php foreach ($categorys as $category) : ?>
-				<div class="category category-ellipse mb-4 mb-md-0">
-					<a href="index.php?controller=category&id=<?= $category['id'] ?>">
-						<figure>
-							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjzupWnuFsS-btcV7bMOeYw6V30fnRRXuCFd1kGRfb5-FyDOzF7D5qVpNw8t_-X74GUKI&usqp=CAU" alt="category" width="160" height="161">
-						</figure>
-					</a>
-					<div class="category-content">
-						<h3 class="category-name"><a href="#"><?= $category['name'] ?></a>
-						</h3>
-					</div>
-				</div>
-			<?php endforeach; ?>
+
 		</div>
 	</div>
 	<nav class="breadcrumb-nav has-border">
@@ -29,8 +17,28 @@
 	<div class="page-content mb-10 shop-page">
 		<div class="container">
 			<div class="row main-content-wrap">
-				<div class="col-lg-12 main-content pl-lg-6">
-					<nav class="toolbox sticky-toolbox sticky-content fix-top">
+				<aside class="col-lg-3 sidebar widget-sidebar sidebar-fixed sidebar-toggle-remain shop-sidebar sticky-sidebar-wrapper">
+					<div class="sidebar-content">
+						<div class="sticky-sidebar pt-7" data-sticky-options="{'top': 10}">
+
+							<div class="widget widget-collapsible">
+								<h3 class="widget-title title-underline">
+									<span class="title-text">Danh Mục</span>
+								</h3>
+								<ul class="widget-body filter-items">
+									<?php foreach ($categorys as $category) : ?>
+										<p>
+											&#10063; <a href="index.php?controller=category&id=<?= $category['id'] ?>"><?= $category['name'] ?></a>
+										</p>
+									<?php endforeach; ?>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</aside>
+				<div class="col-lg-9 main-content pl-lg-6">
+					<nav class="toolbox sticky-toolbox sticky-content fix-top" style="justify-content: flex-end;">
 						<form action="index.php?controller=category&action=filters" method="post" style="display: flex; align-items: center;">
 							<div class="toolbox-left">
 								<div class="toolbox-item toolbox-sort select-menu" style="margin-bottom: 0;">

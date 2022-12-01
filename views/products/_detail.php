@@ -17,28 +17,28 @@
 					<div class="product-gallery">
 						<div class="product-single-carousel owl-carousel owl-theme owl-nav-inner row cols-1 gutter-no">
 							<figure class="product-image">
-								<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
+								<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
 							</figure>
 							<figure class="product-image">
-							<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
+								<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
 							</figure>
-							<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
+							<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
 							</figure>
-							<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
+							<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
 						</div>
 						<div class="product-thumbs-wrap">
 							<div class="product-thumbs">
 								<div class="product-thumb active">
-									<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
+									<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
 								</div>
 								<div class="product-thumb">
-									<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
+									<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
 								</div>
 								<div class="product-thumb">
-									<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
+									<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
 								</div>
 								<div class="product-thumb">
-									<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
+									<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
 								</div>
 							</div>
 							<button class="thumb-up disabled"><i class="fas fa-chevron-left"></i></button>
@@ -64,7 +64,7 @@
 						</p>
 						<div class="product-form product-qty pt-1">
 							<div class="product-form-group">
-								<a href="index.php?controller=cart&action=store&id=<?= $product['id'] ?>" class="btn-product ls-normal font-weight-semi-bold" style="width: 100%; background-color: #ccc; text-align: center;display: block; padding: 20px 0;"><i class="p-icon-cart-solid"></i>ADD TO CART</a>
+								<a href="index.php?controller=cart&action=store&id=<?= $product['id'] ?>" class="btn-product ls-normal font-weight-semi-bold" style="width: 100%; background-color: #ccc; text-align: center;display: block; padding: 20px 0;">Thêm Vào Giỏ Hàng</a>
 							</div>
 						</div>
 						<hr class="product-divider">
@@ -101,7 +101,7 @@
 									<div class="comment">
 										<figure class="comment-media">
 											<a href="#">
-												<img src="./upload/<?php echo $product['image']?>" width="100" height="100" alt="avatar">
+												<img src="./upload/<?php echo $product['image'] ?>" width="100" height="100" alt="avatar">
 											</a>
 										</figure>
 										<div class="comment-body mt-2 mt-sm-0">
@@ -138,7 +138,7 @@
 									<div class="comment">
 										<figure class="comment-media">
 											<a href="#">
-											<img src="./upload/<?php echo $product['image']?>" width="800" height="1000">
+												<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
 											</a>
 										</figure>
 										<div class="comment-body mt-2 mt-sm-0">
@@ -189,8 +189,8 @@
 							<figure class="product-media">
 								<a href="index.php?controller=product&action=detail&id=<?= $item['id'] ?>">
 
-								<img src="./upload/<?php echo $item['image']?>" width="800" height="1000">
-								
+									<img src="./upload/<?php echo $item['image'] ?>" width="800" height="1000">
+
 								</a>
 								<div class="product-label-group">
 									<?php if ($item['sale']) : ?>

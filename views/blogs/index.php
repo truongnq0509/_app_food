@@ -13,24 +13,33 @@
 	<div class="page-content">
 		<div class="container mb-10 pb-3">
 			<div class="row">
-				<div class="col-lg-9 pr-lg-6">
-					<div class="posts">
-						<?php foreach ($blogs as $blog): ?>
-							<article class="post post-border post-classic overlay-zoom">
+				<div class="col-lg-12 pr-lg-6">
+					<div class="posts row">
+						<?php foreach ($blogs as $blog) : ?>
+							<article class="post post-border post-classic overlay-zoom col-lg-6">
 								<figure class="post-media">
-									<a href="index.php?controller=blog&action=detail&id=<?=$blog['id']?>">
-										<img src="./upload/<?= $blog['image']?>" width="250px" height="250px" alt="post" />
+									<a href="index.php?controller=blog&action=detail&id=<?= $blog['id'] ?>" style="display: flex; align-items: center; justify-content: center;	">
+										<img src="./upload/<?= $blog['image'] ?>" style="width: 250px; height: 250px;" alt="post" />
 									</a>
 								</figure>
 								<div class="post-details text-center">
 									<div class="post-calendar">
 										<?= $blog['created_date'] ?>
 									</div>
-									<h4 class="post-title"><a href="index.php?controller=blog&action=detail&id=<?=$blog['id']?>"><?=$blog['title'] ?></a></h4>
-									<p class="post-content">
-										<?=$blog['description'] ?>	
+									<h4 class="post-title"><a href="index.php?controller=blog&action=detail&id=<?= $blog['id'] ?>"><?= $blog['title'] ?></a></h4>
+									<p class="post-content" style="
+															display: -webkit-box;
+															height: 16px*1.3*3;
+															font-size: 16px;
+															line-height: 1.3;
+															-webkit-line-clamp: 3;  /* số dòng hiển thị */
+															-webkit-box-orient: vertical;
+															overflow: hidden;
+															text-overflow: ellipsis;
+															">
+										<?= $blog['description'] ?>
 									</p>
-									<a href="index.php?controller=blog&action=detail&id=<?=$blog['id']?>" class="btn btn-outline btn-dark">Read
+									<a href="index.php?controller=blog&action=detail&id=<?= $blog['id'] ?>" class="btn btn-outline btn-dark">Read
 										more
 									</a>
 								</div>
@@ -55,22 +64,6 @@
 						</li>
 					</ul>
 				</div>
-				<aside class="col-lg-3 right-sidebar sidebar-fixed sticky-sidebar-wrapper">
-					<a class="sidebar-close" href="#"><i class="p-icon-times"></i></a>
-					<a href="#" class="sidebar-toggle"><i class="fas fa-chevron-left"></i></a>
-					<div class="sidebar-content">
-						<div class="sticky-sidebar" data-sticky-options="{'paddingOffsetTop': 89, 'paddingOffsetBottom': 20}">
-							<div class="widget widget-search border-no mb-9">
-								<form action="#" class="form-simple">
-									<input type="text" name="search" autocomplete="off" placeholder="Enter your keywords..." required />
-									<button class="btn btn-search btn-link" type="submit">
-										<i class="p-icon-search-solid"></i>
-									</button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</aside>
 			</div>
 		</div>
 	</div>

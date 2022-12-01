@@ -14,44 +14,80 @@ function getCategory($id)
     return $data;
 }
 
-function filterProduct($option)
+function filterProduct($option, $id)
 {
+    global $data;
     $option = (int)$option;
 
     switch ($option) {
         case 1:
             // giá tăng dần
-            $data = executeSingle("SELECT * FROM products ORDER BY sale ASC");
+            if ($id) {
+                $id = (int)$id;
+                $data = executeSingle("SELECT * FROM products WHERE category_id = $id ORDER BY sale ASC");
+            } else {
+                $data = executeSingle("SELECT * FROM products ORDER BY sale ASC");
+            }
             break;
 
         case 2:
             // giá giảm dần
-            $data = executeSingle("SELECT * FROM products ORDER BY sale DESC");
+            if ($id) {
+                $id = (int)$id;
+                $data = executeSingle("SELECT * FROM products WHERE category_id = $id ORDER BY sale DESC");
+            } else {
+                $data = executeSingle("SELECT * FROM products ORDER BY sale DESC");
+            }
             break;
 
         case 3:
             // tên a-z
-            $data = executeSingle("SELECT * FROM products ORDER BY name ASC");
+            if ($id) {
+                $id = (int)$id;
+                $data = executeSingle("SELECT * FROM products WHERE category_id = $id ORDER BY name ASC");
+            } else {
+                $data = executeSingle("SELECT * FROM products ORDER BY name ASC");
+            }
             break;
 
         case 4:
             // tên z-a
-            $data = executeSingle("SELECT * FROM products ORDER BY name DESC");
+            if ($id) {
+                $id = (int)$id;
+                $data = executeSingle("SELECT * FROM products WHERE category_id = $id ORDER BY name DESC");
+            } else {
+                $data = executeSingle("SELECT * FROM products ORDER BY name DESC");
+            }
             break;
 
         case 5:
             // sản phẩm cũ nhất
-            $data = executeSingle("SELECT * FROM products ORDER BY id ASC");
+            if ($id) {
+                $id = (int)$id;
+                $data = executeSingle("SELECT * FROM products WHERE category_id = $id ORDER BY id ASC");
+            } else {
+                $data = executeSingle("SELECT * FROM products ORDER BY id ASC");
+            }
             break;
 
         case 6:
             // sản phẩm mới nhất
-            $data = executeSingle("SELECT * FROM products ORDER BY id DESC");
+            if ($id) {
+                $id = (int)$id;
+                $data = executeSingle("SELECT * FROM products WHERE category_id = $id ORDER BY id DESC");
+            } else {
+                $data = executeSingle("SELECT * FROM products ORDER BY id DESC");
+            }
             break;
 
         case 7:
             // tồn kho giảm dần
-            $data = executeSingle("SELECT * FROM products ORDER BY quantity DESC");
+            if ($id) {
+                $id = (int)$id;
+                $data = executeSingle("SELECT * FROM products WHERE category_id = $id ORDER BY quantity DESC");
+            } else {
+                $data = executeSingle("SELECT * FROM products ORDER BY quantity DESC");
+            }
             break;
 
         default:

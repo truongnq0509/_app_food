@@ -1,26 +1,14 @@
 <main class="main">
 	<div class="page-header cph-header pl-4 pr-4" style="background-color: #fff7ec">
-		<h1 class="page-title font-weight-light text-capitalize">Panda Shop</h1>
+		<h1 class="page-title font-weight-light text-capitalize">Dev Food</h1>
 		<div class="category-container row justify-content-center cols-2 cols-xs-3 cols-sm-4 cols-md-6 pt-6">
-			<?php foreach ($categorys as $item) : ?>
-				<div class="category category-ellipse mb-4 mb-md-0">
-					<a href="index.php?controller=category&id=<?= $item['id'] ?>">
-						<figure>
-							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjzupWnuFsS-btcV7bMOeYw6V30fnRRXuCFd1kGRfb5-FyDOzF7D5qVpNw8t_-X74GUKI&usqp=CAU" alt="category" width="160" height="161">
-						</figure>
-					</a>
-					<div class="category-content">
-						<h3 class="category-name"><a href="#"><?= $item['name'] ?></a>
-						</h3>
-					</div>
-				</div>
-			<?php endforeach; ?>
 		</div>
 	</div>
 	<nav class="breadcrumb-nav has-border">
 		<div class="container">
 			<ul class="breadcrumb">
 				<li><a href="index.php">Trang Chủ</a></li>
+				<li><a href="index.php"><?= $categoryUrl['name'] ?? 'Tất Cả' ?></a></li>
 			</ul>
 		</div>
 	</nav>
@@ -28,9 +16,29 @@
 	<div class="page-content mb-10 shop-page">
 		<div class="container">
 			<div class="row main-content-wrap">
-				<div class="col-lg-12 main-content pl-lg-6">
-					<nav class="toolbox sticky-toolbox sticky-content fix-top">
-						<form action="index.php?controller=category&action=filters" method="post" style="display: flex; align-items: center;">
+				<aside class="col-lg-3 sidebar widget-sidebar sidebar-fixed sidebar-toggle-remain shop-sidebar sticky-sidebar-wrapper">
+					<div class="sidebar-content">
+						<div class="sticky-sidebar pt-7" data-sticky-options="{'top': 10}">
+
+							<div class="widget widget-collapsible">
+								<h3 class="widget-title title-underline">
+									<span class="title-text">Danh Mục</span>
+								</h3>
+								<ul class="widget-body filter-items">
+									<?php foreach ($categorys as $category) : ?>
+										<p>
+											&#10063; <a href="index.php?controller=category&id=<?= $category['id'] ?>"><?= $category['name'] ?></a>
+										</p>
+									<?php endforeach; ?>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</aside>
+				<div class="col-lg-9 main-content pl-lg-6">
+					<nav class="toolbox sticky-toolbox sticky-content fix-top" style="justify-content: flex-end;">
+						<form action="index.php?controller=category&action=filters&id=<?= $categoryUrl['id'] ?? null ?>" method="post" style="display: flex; align-items: center;">
 							<div class="toolbox-left">
 								<div class="toolbox-item toolbox-sort select-menu" style="margin-bottom: 0;">
 									<select name="option">
@@ -45,90 +53,73 @@
 								</div>
 								<button class="btn btn-primary" type="submit" style="padding: 0.95em 2.78em 0.95em;">Lọc</button>
 						</form>
-				</div>
-				</nav>
-				<div class="row product-wrapper cols-lg-5 cols-2" id="filter">
-					<?php if (!empty($products)) : foreach ($products as $product) : ?>
-							<div class="product-wrap">
-								<div class="product shadow-media text-center">
-									<figure class="product-media">
-										<a href="index.php?controller=product&action=detail&id=<?= $product['id'] ?>">
-											<img src="./upload/<?php echo $product['image'] ?>" alt="product" width="295" height="369" />
-										</a>
-										<div class="product-action-vertical">
-											<a href="index.php?controller=cart&action=store&id=<?= $product['id'] ?>" class="btn-product-icon" title="Add to Cart">
-												<i class="p-icon-cart-solid"></i>
-											</a>
-											<a href="#" class="btn-product-icon btn-wishlist" title="Add to Wishlist">
-												<i class="p-icon-heart-solid"></i>
-											</a>
-										</div>
-									</figure>
-									<div class="product-details">
-										<div class="ratings-container">
-											<div class="ratings-full">
-												<span class="ratings" style="width:60%"></span>
-												<span class="tooltiptext tooltip-top"></span>
-											</div>
-										</div>
-										<h5 class="product-name">
+					</nav>
+					<div class="row product-wrapper cols-lg-5 cols-2">
+						<?php if (!empty($products)) : foreach ($products as $product) : ?>
+								<div class="product-wrap">
+									<div class="product shadow-media text-center">
+										<figure class="product-media">
 											<a href="index.php?controller=product&action=detail&id=<?= $product['id'] ?>">
-												<?= $product['name'] ?>
+												<img src="./upload/<?php echo $product['image'] ?>" alt="product" width="295" height="369" />
 											</a>
-										</h5>
-										<span class="product-price">
-											<?php if ($product['sale']) : ?>
-												<del class="old-price"><?= number_format($product['price'], 0, ',', '.') ?></del>
-												<ins class="new-price"><?= number_format($product['sale'], 0, ',', '.') ?></ins>
-											<?php else : ?>
-												<del class="new-price"><?= number_format($product['price'], 0, ',', '.') ?></del>
-											<?php endif; ?>
-										</span>
+											<div class="product-action-vertical">
+												<a href="index.php?controller=cart&action=store&id=<?= $product['id'] ?>" class="btn-product-icon" title="Add to Cart">
+													<i class="p-icon-cart-solid"></i>
+												</a>
+												<a href="#" class="btn-product-icon btn-wishlist" title="Add to Wishlist">
+													<i class="p-icon-heart-solid"></i>
+												</a>
+											</div>
+										</figure>
+										<div class="product-details">
+											<div class="ratings-container">
+												<div class="ratings-full">
+													<span class="ratings" style="width:60%"></span>
+													<span class="tooltiptext tooltip-top"></span>
+												</div>
+											</div>
+											<h5 class="product-name">
+												<a href="index.php?controller=product&action=detail&id=<?= $item['id'] ?>">
+													<?= $product['name'] ?>
+												</a>
+											</h5>
+											<span class="product-price">
+												<?php if ($product['sale']) : ?>
+													<del class="old-price"><?= number_format($product['price'], 0, ',', '.') ?></del>
+													<ins class="new-price"><?= number_format($product['sale'], 0, ',', '.') ?></ins>
+												<?php else : ?>
+													<del class="new-price"><?= number_format($product['price'], 0, ',', '.') ?></del>
+												<?php endif; ?>
+											</span>
+										</div>
 									</div>
 								</div>
-							</div>
 						<?php endforeach;
-					else : ?>
+						endif; ?>
+					</div>
+					<nav class="toolbox toolbox-pagination pt-2 pb-6">
+						<p class="toolbox-item show-info"></p>
+						<ul class="pagination">
+							<li class="page-item disabled">
+								<a class="page-link page-link-prev" href="#" aria-label="Previous" tabindex="-1" aria-disabled="true">
+									<i class="p-icon-angle-left"></i>
+								</a>
+							</li>
+							<li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item page-item-dots"></li>
+							<li class="page-item"><a class="page-link" href="#">5</a></li>
+							<li class="page-item">
+								<a class="page-link page-link-next" href="#" aria-label="Next">
+									<i class="p-icon-angle-right"></i>
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
-				<h1>Hiện tại đang cập nhật...</h1>
-			<?php endif; ?>
-			<!-- <nav class="toolbox toolbox-pagination pt-2 pb-6">
-				<p class="toolbox-item show-info"></p>
-				<ul class="pagination">
-					<li class="page-item disabled">
-						<a class="page-link page-link-prev" href="#" aria-label="Previous" tabindex="-1" aria-disabled="true">
-							<i class="p-icon-angle-left"></i>
-						</a>
-					</li>
-					<li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a>
-					</li>
-					<li class="page-item"><a class="page-link" href="#">2</a></li>
-					<li class="page-item page-item-dots"></li>
-					<li class="page-item"><a class="page-link" href="#">5</a></li>
-					<li class="page-item">
-						<a class="page-link page-link-next" href="#" aria-label="Next">
-							<i class="p-icon-angle-right"></i>
-						</a>
-					</li>
-				</ul>
-			</nav> -->
 			</div>
 		</div>
 	</div>
-	</div>
 	<!-- End .page-content-->
 </main>
-<script type="text/javascript">
-	$(document).on("change", `${selector}`, function(e) {
-		let option = $(this).val()
-		console.log(option)
-		$.post(
-			'./layout/main/filter.php', {
-				option: option
-			},
-			function(response) {
-				$('.filter').html(response)
-			}
-		)
-	})
-</script>

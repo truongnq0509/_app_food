@@ -14,12 +14,12 @@
 	<div class="page-content">
 		<div class="container mb-10 pb-6">
 			<div class="row">
-				<div class="col-lg-9 pr-lg-6">
+				<div class="col-lg-12 pr-lg-6">
 					<div class="posts">
 						<article class="post post-single">
 							<figure class="post-media">
-								<a href="#">
-									<img src="./upload/<?= $blog['image'] ?>" width="905" height="500" alt="post" />
+								<a href="#" style="display: flex; align-items: center; justify-content: center;	">
+									<img src="./upload/<?= $blog['image'] ?>" alt="post" style="width: 400px;" />
 								</a>
 							</figure>
 							<div class="post-details mt-6">
@@ -39,22 +39,6 @@
 					</div>
 					<!-- End Posts -->
 				</div>
-				<aside class="col-lg-3 right-sidebar sidebar-fixed sticky-sidebar-wrapper">
-					<a class="sidebar-close" href="#"><i class="p-icon-times"></i></a>
-					<a href="#" class="sidebar-toggle"><i class="fas fa-chevron-left"></i></a>
-					<div class="sidebar-content">
-						<div class="sticky-sidebar" data-sticky-options="{'paddingOffsetTop': 89, 'paddingOffsetBottom': 20}">
-							<div class="widget widget-search border-no mb-9">
-								<form action="#" class="form-simple">
-									<input type="text" name="search" autocomplete="off" placeholder="Enter..." required />
-									<button class="btn btn-search btn-link" type="submit">
-										<i class="p-icon-search-solid"></i>
-									</button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</aside>
 			</div>
 		</div>
 	</div>
