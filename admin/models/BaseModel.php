@@ -104,7 +104,7 @@ function remove($table, $id)
 
 function movie($table, $id)
 {
-    $sql = "UPDATE {$table} SET category_id = 13 WHERE category_id = $id";
+    $sql = "UPDATE {$table} SET category_id = 15 WHERE category_id = $id";
 
     execute($sql);
 }

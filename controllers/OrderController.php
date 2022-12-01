@@ -60,13 +60,29 @@ function add()
 			}
 			// Update số lượng trong kho
 			updateQuantityProduct($products, $productsId);
-			// Remove giỏ hàng
-			unset($_SESSION['cart']);
-			header('location: index.php?controller=order');
-			echo "<script>alert('Bạn đã đặt hàng thành công')</script>";
+			header('location: index.php?controller=order&action=checkout');
+			// echo "<script>alert('Bạn đã đặt hàng thành công')</script>";
 		}
 	} else {
 		echo "<script>alert('Vui lòng đăng nhập để đặt hàng hoặc là trong giỏ không có hàng')</script>";
 		echo '<script>window.location="index.php?controller=order"</script>';
 	}
+}
+
+function checkout()
+{
+	global $data;
+	$productsId = implode(',', array_keys($_SESSION['cart'] ?? []));
+
+	if ($productsId) {
+		$products = getProductByIn($productsId);
+	}
+
+	view('layouts/index', [
+		'title' => 'Hoàn Thành Đơn Hàng',
+		'content' => 'order/check',
+		$data = [
+			'products' => $products,
+		]
+	]);
 }

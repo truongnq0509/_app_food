@@ -3,6 +3,7 @@
 		<div class="step-by pr-4 pl-4">
 			<h3 class="title title-step"><a href="index.php?controller=cart">1.Giỏ Hàng</a></h3>
 			<h3 class="title title-step active"><a href="index.php?controller=order">2.Đặt Hàng</a></h3>
+			<h3 class="title title-step"><a href="index.php?controller=order&action=checkout">3.Hoàn Thành Đơn Hàng</a></h3>
 		</div>
 		<div class="container mt-7">
 			<form action="index.php?controller=order&action=add" method="post" id="order-form">

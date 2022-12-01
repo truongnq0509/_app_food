@@ -82,6 +82,16 @@
 									</div>
 								</div>
 							<?php endforeach; ?>
+							<div class="form-group row">
+								<div class="col-sm-6">
+									<input type="text" class="form-control" disabled style="border: none;" value="Tổng Tiền">
+								</div>
+								<div class="col-sm-2">
+								</div>
+								<div class="col-sm-4">
+									<input type="text" class="form-control" disabled style="border: none;" value="<?= number_format($order['total_money'], 0, ',', '.')?> VNĐ">
+								</div>
+							</div>
 						</div>
 					</div>
 				</form>

@@ -16,7 +16,7 @@
 										<th scope="col">Giá</th>
 										<th scope="col">Giảm Giá</th>
 										<th scope="col" style="width: 100px ;">Ảnh</th>
-										<th scope="col">Số Lượng</th>
+										<th scope="col">Tồn Kho</th>
 										<th scope="col">Danh Mục</th>
 										<th scope="col">Actions</th>
 									</tr>

@@ -1,18 +1,21 @@
-<?php 
+<?php
 define('tableCategory', 'categorys');
 $data = null;
 
-function getAllCategory() {
-    $data = all(tableCategory);
+function getAllCategory()
+{
+    $data = executeSingle("SELECT * FROM categorys WHERE id != 15");
     return $data;
 }
 
-function getCategory($id) {
+function getCategory($id)
+{
     $data = find(tableCategory, $id);
     return $data;
 }
 
-function filterProduct($option) {
+function filterProduct($option)
+{
     $option = (int)$option;
 
     switch ($option) {
@@ -20,7 +23,7 @@ function filterProduct($option) {
             // giá tăng dần
             $data = executeSingle("SELECT * FROM products ORDER BY sale ASC");
             break;
-           
+
         case 2:
             // giá giảm dần
             $data = executeSingle("SELECT * FROM products ORDER BY sale DESC");
@@ -58,5 +61,3 @@ function filterProduct($option) {
 
     return $data;
 }
-
-?>

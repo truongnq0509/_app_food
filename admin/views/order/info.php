@@ -65,6 +65,13 @@
 											</td>
 										</tr>
 									<?php endforeach; ?>
+									<tr>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th><?= number_format($order['total_money'], 0, ',', '.') . ' VNĐ'?></th>
+									</tr>
 								</tbody>
 							</table>
 						</div>
