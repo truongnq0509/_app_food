@@ -5,7 +5,7 @@
 	<nav class="breadcrumb-nav">
 		<div class="container">
 			<ul class="breadcrumb">
-				<li><a href="demo1.html">Home</a></li>
+				<li><a href="demo1.html">Trang Chủ</a></li>
 				<li><a href="blog.html">Blog</a></li>
 				<li><?= $blog['title'] ?></li>
 			</ul>

@@ -33,7 +33,7 @@
                                     <span class="form-message"></span>
                                 </div>
                                 <input name="id" id="id" type="text" value="<?php echo $blog['id'] ?>" hidden />
-                                <button type="submit" class="btn btn-light px-5 radius-30">Update</button>
+                                <button type="submit" class="btn btn-light px-5 radius-30">Cập Nhật</button>
                                 <button type="reset" class="btn btn-light px-5 radius-30">Nhập lại</button>
                             </div>
                         </div>

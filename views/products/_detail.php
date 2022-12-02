@@ -64,7 +64,7 @@
 						</p>
 						<div class="product-form product-qty pt-1">
 							<div class="product-form-group">
-								<a href="index.php?controller=cart&action=store&id=<?= $product['id'] ?>" class="btn-product ls-normal font-weight-semi-bold" style="width: 100%; background-color: #ccc; text-align: center;display: block; padding: 20px 0;">Thêm Vào Giỏ Hàng</a>
+								<a href="index.php?controller=cart&action=store&id=<?= $product['id'] ?>" class="btn-product ls-normal font-weight-semi-bold" style="width: 100%; background-color: #ccc; text-align: center;display: block; padding: 20px 0;">Thêm Vào Giỏ</a>
 							</div>
 						</div>
 						<hr class="product-divider">

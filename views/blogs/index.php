@@ -5,7 +5,7 @@
 	<nav class="breadcrumb-nav">
 		<div class="container">
 			<ul class="breadcrumb">
-				<li><a href="demo1.html">Home</a></li>
+				<li><a href="demo1.html">Trang Chủ</a></li>
 				<li><a href="blog.html">Blog</a></li>
 			</ul>
 		</div>
@@ -22,25 +22,26 @@
 										<img src="./upload/<?= $blog['image'] ?>" style="width: 250px; height: 250px;" alt="post" />
 									</a>
 								</figure>
-								<div class="post-details text-center">
+								<div class="post-details text-center" style="padding: 6rem 0;">
 									<div class="post-calendar">
 										<?= $blog['created_date'] ?>
 									</div>
 									<h4 class="post-title"><a href="index.php?controller=blog&action=detail&id=<?= $blog['id'] ?>"><?= $blog['title'] ?></a></h4>
 									<p class="post-content" style="
+															text-align: justify;
 															display: -webkit-box;
-															height: 16px*1.3*3;
+															height: 16px*1.3*4;
 															font-size: 16px;
 															line-height: 1.3;
-															-webkit-line-clamp: 3;  /* số dòng hiển thị */
+															-webkit-line-clamp: 4;  /* số dòng hiển thị */
 															-webkit-box-orient: vertical;
 															overflow: hidden;
 															text-overflow: ellipsis;
 															">
 										<?= $blog['description'] ?>
 									</p>
-									<a href="index.php?controller=blog&action=detail&id=<?= $blog['id'] ?>" class="btn btn-outline btn-dark">Read
-										more
+									<a href="index.php?controller=blog&action=detail&id=<?= $blog['id'] ?>" class="btn btn-outline btn-dark">
+										Đọc Thêm
 									</a>
 								</div>
 							</article>

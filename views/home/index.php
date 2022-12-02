@@ -1,7 +1,19 @@
 <main class="main">
+	<div class="page-header cph-header pl-4 pr-4" style="background-color: #fff7ec">
+		<h1 class="page-title font-weight-light text-capitalize">Dev Food</h1>
+		<div class="category-container row justify-content-center cols-2 cols-xs-3 cols-sm-4 cols-md-6 pt-6">
+		</div>
+	</div>
+
+	<nav class="breadcrumb-nav has-border">
+		<div class="container">
+			<ul class="breadcrumb">
+				<li><a href="index.php">Trang Chủ</a></li>
+			</ul>
+		</div>
+	</nav>
 	<div class="page-content">
 		<section class="container mt-10 pt-7 mb-7 appear-animate">
-			<h2 class="title-underline2 text-center mb-2"><span>Sản Phẩm Mới</span></h2>
 			<div class="tab tab-nav-center product-tab product-tab-type2">
 				<div class="tab-content">
 					<div class="tab-pane active" id="canned">
@@ -12,8 +24,8 @@
 							?>
 								<div class="product shadow-media text-center">
 									<figure class="product-media">
-										<a href="index.php?controller=product&action=detail&id=<?=$product['id']?>">
-											<img src="./upload/<?php echo $product['image']?>" alt="product" width="295" height="369" />
+										<a href="index.php?controller=product&action=detail&id=<?= $product['id'] ?>">
+											<img src="./upload/<?php echo $product['image'] ?>" alt="product" width="295" height="369" />
 										</a>
 										<div class="product-label-group">
 											<?php if ($product['sale']) : ?>
@@ -21,7 +33,7 @@
 											<?php endif; ?>
 										</div>
 										<div class="product-action-vertical">
-											<a href="index.php?controller=cart&action=store&id=<?=$product['id']?>" class="btn-product-icon" title="Add to Cart">
+											<a href="index.php?controller=cart&action=store&id=<?= $product['id'] ?>" class="btn-product-icon" title="Add to Cart">
 												<i class="p-icon-cart-solid"></i>
 											</a>
 											<a href="#" class="btn-product-icon btn-wishlist" title="Add to Wishlist">
@@ -38,7 +50,7 @@
 											<a href="product-simple.html#content-reviews" class="rating-reviews"></a>
 										</div>
 										<h5 class="product-name">
-											<a href="index.php?controller=detail&id=<?=$product['id']?>">
+											<a href="index.php?controller=detail&id=<?= $product['id'] ?>">
 												<?= $product['name'] ?>
 											</a>
 										</h5>

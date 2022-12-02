@@ -1,6 +1,6 @@
 <?php
 
-$category = all('categorys');
+$category = executeSingle("SELECT * FROM categorys WHERE id != 15");
 
 ?>
 <div class="page-wrapper">

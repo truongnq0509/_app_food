@@ -15,7 +15,7 @@
                                         <th scope="col">#</th>
                                         <th scope="col">Tiêu Đề</th>
                                         <th scope="col" style="width: 100px ;">Ảnh</th>
-                                        <th scope="col" style="width: 200px;">Nội Dung</th>
+                                        <th scope="col" style="width: 700px;">Nội Dung</th>
                                         <th scope="col">Ngày Viết</th>
                                         <th scope="col">Actions</th>
 
@@ -37,7 +37,7 @@
                                                 <img style="min-width: 100px; height: 100px; " src="../upload/<?php echo $value['image'] ?>" class="img-thumbnail" alt="">
 
                                             </td>
-                                            <td style="width: 250px;">
+                                            <td style="width: 600px;">
                                                 <p style="
                                                 display: block;
                                                 height: 16px*1.3*3;
@@ -48,7 +48,7 @@
                                                 overflow: hidden;
                                                 text-overflow: ellipsis;
                                                 margin-top:10px;
-                                                max-width: 250px;">
+                                                max-width: 600px;">
                                                     <?php echo $value['description'] ?>
                                                 </p>
                                             </td>

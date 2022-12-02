@@ -32,7 +32,7 @@
 						<i class="p-icon-search-solid"></i>
 					</a>
 					<form action="index.php?controller=product&action=search" method="post" id="form-search" class="form-simple">
-						<input type="search" autocomplete="off" placeholder="Search in..." name="search">
+						<input type="search" autocomplete="off" placeholder="Tìm kiếm..." name="search">
 						<button class="btn btn-search" type="submit">
 							<i class="p-icon-search-solid"></i>
 						</button>
@@ -58,19 +58,8 @@
 
 				<?php
 				if (!empty($_SESSION['user'])) : ?>
-					<a style="font-size: 16px; margin: 0 4px;" href="index.php?controller=account&action=logout" onclick="return confirm('Bạn có chắc muốn đăng xuất khỏi trái đất không 😂😂😂')">					
-
-						<?php
-						// echo "<pre>";
-						// 	var_dump($_SESSION);die;
-							echo $_SESSION['user']['fullname'];
-					
-						if($_SESSION['user']['email'] == 'sonnvph19457@fpt.edu.vn'){							
-							echo "<a href='http://localhost:8080/php1/dev-food/admin/'> Trang admin</a>";
-						} 
-											
-						?>
-						
+					<a style="font-size: 16px; margin: 0 4px;" href="index.php?controller=account&action=logout" onclick="return confirm('Bạn có chắc muốn đăng xuất không 😂😂😂')">
+						<?= $_SESSION['user']['fullname']; ?>
 					</a>
 				<?php else : ?>
 					<a style="font-size: 24px; margin: 0 4px;" href="index.php?controller=account">
@@ -81,16 +70,3 @@
 		</div>
 	</div>
 </header>
-
-<!-- <script type="text/javascript">
-	$(document).on("keyup", `#form-search input`, function(e) {
-        let txt = $(this).val()
-        $.post(
-            './controllers/ProductController.php',
-            { data: txt },
-            function(response) {
-                $(".main").html(txt);
-            }
-        )
-    })
-</script> -->

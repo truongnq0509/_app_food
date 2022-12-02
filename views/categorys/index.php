@@ -1,6 +1,6 @@
 <main class="main">
 	<div class="page-header cph-header pl-4 pr-4" style="background-color: #fff7ec">
-		<h1 class="page-title font-weight-light text-capitalize">Dev Food</h1>
+		<h1 class="page-title font-weight-light text-capitalize">Cửa Hàng</h1>
 		<div class="category-container row justify-content-center cols-2 cols-xs-3 cols-sm-4 cols-md-6 pt-6">
 		</div>
 	</div>

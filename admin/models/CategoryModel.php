@@ -5,7 +5,7 @@ define('tableProduct', 'products');
 
 function getAllCategory()
 {
-	$data = all(tableCategory);
+	$data =	executeSingle("SELECT * FROM categorys WHERE id != 15");
 	return $data;
 }
 

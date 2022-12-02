@@ -19,18 +19,23 @@ function getOneProduct()
 
 function insert()
 {
-    // var_dump($_POST);die;
+    // Ma hoa file anh
+    $fileName = $_FILES['image']['name'];
+    $fileName = explode('.', $fileName);
+    $ext = end($fileName);
+    $newFile = md5(uniqid()) . '.' . $ext;
+
     create(tableNameProduct, [
         'category_id' => $_POST['category_id'],
         'name' => $_POST['name'],
         'price' => $_POST['price'],
         'sale' => $_POST['sale'],
-        'image' => $_FILES['image']['name'],
+        'image' => $newFile,
         'description' => $_POST['description'],
         'quantity' => $_POST['quantity'],
     ]);
 
-    move_uploaded_file($_FILES["image"]["tmp_name"], "../upload/" . $_FILES["image"]["name"]);
+    move_uploaded_file($_FILES["image"]["tmp_name"], "../upload/" . $newFile);
 }
 function deleteProduct()
 {
@@ -40,24 +45,25 @@ function deleteProduct()
 
 function updateProduct()
 {
-    $image = $_FILES['image']['name'];
-    // var_dump($image);die;
+    $id = $_POST['id'];
+    $newFile = null;
+    $fileName = $_FILES['image']['name'];
 
-    if ($image == "") {
-        $image = $_POST['hinhcu'];
+    if ($fileName == "") {
+        $newFile = $_POST['hinhcu'];
     } else {
-        move_uploaded_file($_FILES["image"]["tmp_name"], "../upload/" . $_FILES["image"]["name"]);
+        $fileName = explode('.', $fileName);
+        $ext = end($fileName);
+        $newFile = md5(uniqid()) . '.' . $ext;
+        move_uploaded_file($_FILES["image"]["tmp_name"], "../upload/" . $newFile);
     }
 
-    $id = $_POST['id'];
-
-    // var_dump($_POST['id']);die;
     updateData(tableNameProduct, $id, [
         'category_id' => $_POST['category_id'],
         'name' => $_POST['name'],
         'price' => $_POST['price'],
         'sale' => $_POST['sale'],
-        'image' => $image,
+        'image' => $newFile,
         'description' => $_POST['description'],
         'quantity' => $_POST['quantity'],
     ]);

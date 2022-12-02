@@ -3,10 +3,6 @@ loadModel('ProductModel');
 
 function index()
 {
-    // echo "hello";die;
-    // echo "<pre>";
-    // var_dump($_SESSION);die;
-
     global $data;
     $products = getAllProduct();
     view('layouts/index', [
