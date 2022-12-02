@@ -12,7 +12,7 @@
 								<thead class="thead-light">
 									<tr>
 										<th scope="col">#</th>
-										<th scope="col">Sản Phẩm</th>
+										<th scope="col" style="width: 200px;">Sản Phẩm</th>
 										<th scope="col">Giá</th>
 										<th scope="col">Giảm Giá</th>
 										<th scope="col" style="width: 100px ;">Ảnh</th>
@@ -32,7 +32,7 @@
 											<td><?= number_format($value['price'], 0, ',', '.') ?> VNĐ</td>
 											<td><?= number_format($value['sale'], 0, ',', '.') ?> VNĐ</td>
 											<td>
-												<img style="min-width: 100px; height: 100px; " src="../upload/<?php echo $value['image'] ?>" class="img-thumbnail" alt="">
+												<a href="index.php?controller=galery&id=<?php echo $value['id'] ?>"><img style="min-width: 100px; height: 100px; " src="../upload/<?php echo $value['image'] ?>" class="img-thumbnail" alt=""></a>
 											</td>
 
 											<td><?php echo $value['quantity'] ?></td>

@@ -16,30 +16,17 @@
 				<div class="col-md-7">
 					<div class="product-gallery">
 						<div class="product-single-carousel owl-carousel owl-theme owl-nav-inner row cols-1 gutter-no">
-							<figure class="product-image">
-								<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
+							<figure class="product-image" style="display: flex; justify-content: center;">
+								<img src="./upload/<?php echo $product['image'] ?>" style="width: 500px; height: 500px;">
 							</figure>
-							<figure class="product-image">
-								<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
-							</figure>
-							<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
-							</figure>
-							<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
 						</div>
 						<div class="product-thumbs-wrap">
 							<div class="product-thumbs">
-								<div class="product-thumb active">
-									<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
-								</div>
-								<div class="product-thumb">
-									<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
-								</div>
-								<div class="product-thumb">
-									<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
-								</div>
-								<div class="product-thumb">
-									<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
-								</div>
+								<?php foreach ($galerys as $galery) : ?>
+									<div class="product-thumb">
+										<img src="./upload/<?php echo $galery['image'] ?>" style="width: 100px; height: 100px; border: 1px solid #ccc; border-radius: 4px;">
+									</div>
+								<?php endforeach; ?>
 							</div>
 							<button class="thumb-up disabled"><i class="fas fa-chevron-left"></i></button>
 							<button class="thumb-down disabled"><i class="fas fa-chevron-right"></i></button>
@@ -101,7 +88,7 @@
 									<div class="comment">
 										<figure class="comment-media">
 											<a href="#">
-												<img src="./upload/<?php echo $product['image'] ?>" width="100" height="100" alt="avatar">
+												<img src="https://znews-photo.zingcdn.me/w960/Uploaded/qhj_yvobvhfwbv/2018_07_18/Nguyen_Huy_Binh1.jpg" width="100" height="100" alt="avatar">
 											</a>
 										</figure>
 										<div class="comment-body mt-2 mt-sm-0">
@@ -118,17 +105,11 @@
 												</span>
 											</div>
 											<div class="comment-description">
-												Very Good!
+												Tuyệt Vời
 											</div>
 											<div class="comment-content">
 												<p>
-													Lorem ipsum dolor sit amt, consectetur adipiscing elit,
-													sed
-													do eiusmod tempor incididunt ut labore
-													et dolore magna aliqua. Venenatis tellus in metus
-													enenatis
-													tellus in metus vulputate eu scelerisque
-													felis.vulputate eu scelerisque felis.
+													Đồ ăn ngon quá 10 điểm shop ơi 😍😍😍😍😍
 												</p>
 											</div>
 										</div>
@@ -138,7 +119,7 @@
 									<div class="comment">
 										<figure class="comment-media">
 											<a href="#">
-												<img src="./upload/<?php echo $product['image'] ?>" width="800" height="1000">
+												<img src="https://znews-photo.zingcdn.me/w960/Uploaded/qhj_yvobvhfwbv/2018_07_18/Nguyen_Huy_Binh1.jpg" width="800" height="1000">
 											</a>
 										</figure>
 										<div class="comment-body mt-2 mt-sm-0">
@@ -155,17 +136,11 @@
 												</span>
 											</div>
 											<div class="comment-description">
-												Very Good!
+												Tuyệt Vời
 											</div>
 											<div class="comment-content">
 												<p>
-													Lorem ipsum dolor sit amt, consectetur adipiscing elit,
-													sed
-													do eiusmod tempor incididunt ut labore
-													et dolore magna aliqua. Venenatis tellus in metus
-													enenatis
-													tellus in metus vulputate eu scelerisque
-													felis.vulputate eu scelerisque felis.
+													Đồ ăn ngon quá 10 điểm shop ơi 😍😍😍😍😍
 												</p>
 											</div>
 										</div>

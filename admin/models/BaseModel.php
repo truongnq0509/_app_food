@@ -90,7 +90,6 @@ function updateData($table, $id, $data = [])
 
     $valuesNew = implode(', ', $values);
     $sql = "UPDATE {$table} SET {$valuesNew} WHERE id = {$id}";
-    // var_dump($sql);die;
     execute($sql);
 }
 

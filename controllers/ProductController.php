@@ -23,6 +23,7 @@ function detail() {
 	global $data;
 	$id = $_GET['id'];
 	$product = getProduct($id);
+	$galerys = getAllGalery($id);
 	$productByCategory = getProductByCategory($product['id'], $product['category_id']);
 
 	view('layouts/index', [
@@ -30,6 +31,7 @@ function detail() {
 		'content' => 'products/_detail',
 		$data = [
 			'product' => $product,
+			'galerys' => $galerys,
 			'productByCategory' => $productByCategory
 		]
 	]);
@@ -48,5 +50,3 @@ function search() {
 	]);
 
 }
-
-?>

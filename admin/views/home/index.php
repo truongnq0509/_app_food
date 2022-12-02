@@ -86,8 +86,8 @@
 						<table id="" class="table table-bordered" style="width:100%">
 							<thead>
 								<tr>
-									<th>STT</th>
-									<th>Tên</th>
+									<th style="width: 100px;">#</th>
+									<th style="width: 200px;">Tên</th>
 									<th>Giá</th>
 									<th>Giảm Giá</th>
 									<th>Ảnh</th>
