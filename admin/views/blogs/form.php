@@ -25,9 +25,9 @@ $users = findColumn('users', 'role_id', 1);
                                     <input name="image" id="image" type="file" rules="required" />
                                     <span class="form-message"></span>
                                 </div>
-                                <div class="form-group">
-                                    <label>Miêu tả</label>
-                                    <textarea name="description" id="description" rules="required|min:100" class="form-control" rows="3" cols="3"></textarea>
+                                <div class="form-group" style="color: #333;">
+                                    <label style="color: #fff;">Miêu tả</label>
+                                    <textarea name="description" class="form-control" id="editor" rules="required|min:100"></textarea>
                                     <span class="form-message"></span>
                                 </div>
                                 <button type="submit" class="btn btn-light px-5">Thêm</button>

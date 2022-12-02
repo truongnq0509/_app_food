@@ -45,9 +45,9 @@ $category = executeSingle("SELECT * FROM categorys WHERE id != 15");
                                     <input type="file" name="image" id="image" />
                                     <input type="text" name="hinhcu" value="<?php echo $product['image'] ?>" hidden>
                                 </div>
-                                <div class="form-group">
-                                    <label>Miêu tả</label>
-                                    <textarea name="description" class="form-control" rows="3" cols="3"><?php echo $product['description'] ?></textarea>
+                                <div class="form-group" style="color: #333;">
+                                    <label style="color: #fff;">Miêu tả</label>
+                                    <textarea name="description" class="form-control" id="editor"><?php echo $product['description'] ?></textarea>
                                     <span class="form-message"></span>
                                 </div>
                                 <div class="form-group">

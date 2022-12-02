@@ -27,17 +27,7 @@
 										<?= $blog['created_date'] ?>
 									</div>
 									<h4 class="post-title"><a href="index.php?controller=blog&action=detail&id=<?= $blog['id'] ?>"><?= $blog['title'] ?></a></h4>
-									<p class="post-content" style="
-															text-align: justify;
-															display: -webkit-box;
-															height: 16px*1.3*4;
-															font-size: 16px;
-															line-height: 1.3;
-															-webkit-line-clamp: 4;  /* số dòng hiển thị */
-															-webkit-box-orient: vertical;
-															overflow: hidden;
-															text-overflow: ellipsis;
-															">
+									<p class="post-content">
 										<?= $blog['description'] ?>
 									</p>
 									<a href="index.php?controller=blog&action=detail&id=<?= $blog['id'] ?>" class="btn btn-outline btn-dark">

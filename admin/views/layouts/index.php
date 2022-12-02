@@ -24,8 +24,20 @@
     <link rel="stylesheet" href="../public/back-end/assets/css/icons.css" />
     <!-- App CSS -->
     <link rel="stylesheet" href="../public/back-end/assets/css/app.css" />
+    <script src="https://cdn.ckeditor.com/4.20.1/standard/ckeditor.js"></script>
+    <style>
+        /*Textbox*/
+        .ck-editor__editable {
+            min-height: 400px;
+            max-height: 400px;
+            min-width: 860px;
+        }
 
-
+        /*Toolbar*/
+        .ck-editor__top {
+            min-width: 860px;
+        }
+    </style>
 </head>
 
 <body class="bg-theme bg-theme6">
@@ -72,6 +84,9 @@
         Validator('#blog-form')
         Validator('#blog-form--edit')
         Validator('#login-form')
+    </script>
+    <script>
+        CKEDITOR.replace('description');
     </script>
 </body>
 

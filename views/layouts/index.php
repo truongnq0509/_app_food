@@ -10,10 +10,25 @@
     <meta name="author" content="D-THEMES">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./public/front-end/images/icons/favicon.png">
+    <link rel="icon" type="image/png" href="https://dynamic.brandcrowd.com/preview/logodraft/c6fe84d9-4aaa-438b-87e9-d4b3f5aac303/image/large.png">
     <!-- Preload Font -->
     <link rel="preload" href="./public/front-end/vendor/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="./public/front-end/vendor/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <style>
+        .post-content~p {
+            text-align: justify;
+            display: -webkit-box;
+            height: 16px*1.3*4;
+            font-size: 16px;
+            line-height: 1.3;
+            -webkit-line-clamp: 4;
+            /* số dòng hiển thị */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
 
     <script>
         WebFontConfig = {
@@ -35,7 +50,7 @@
     <link rel="stylesheet" type="text/css" href="./public/front-end/vendor/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="./public/front-end/vendor/magnific-popup/magnific-popup.min.css">
     <link rel="stylesheet" type="text/css" href="./public/front-end/vendor/nouislider/nouislider.min.css">
-    
+
     <link rel="stylesheet" type="text/css" href="./public/front-end/vendor/photoswipe/photoswipe.min.css">
     <link rel="stylesheet" type="text/css" href="./public/front-end/vendor/photoswipe/default-skin/default-skin.min.css">
     <!-- Main CSS File -->
@@ -48,14 +63,14 @@
 <body>
     <div class="page-wrapper">
         <?php
-            require_once './views/blocks/header.php';
-            view($content, $data[0]);
-            require_once './views/blocks/footer.php';
+        require_once './views/blocks/header.php';
+        view($content, $data[0]);
+        require_once './views/blocks/footer.php';
         ?>
-        <div id="title" style="display: none;"><?= $title?></div>
+        <div id="title" style="display: none;"><?= $title ?></div>
     </div>
-    <?php 
-        require_once './views/blocks/responsive.php'
+    <?php
+    require_once './views/blocks/responsive.php'
     ?>
     <script>
         const title = document.getElementById('title').textContent;

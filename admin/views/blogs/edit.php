@@ -26,10 +26,9 @@
                                     <label>Ngày Đăng</label>
                                     <input type="text" class="form-control" value="<?= $blog['created_date'] ?>" name="created_date">
                                 </div>
-
-                                <div class="form-group">
-                                    <label>Miêu tả</label>
-                                    <textarea name="description" id="description" rules="required|min:100" class="form-control" rows="3" cols="3"><?php echo $blog['description'] ?></textarea>
+                                <div class="form-group" style="color: #333;">
+                                    <label style="color: #fff;">Miêu tả</label>
+                                    <textarea name="description" class="form-control" id="editor" rules="required|min:100"><?php echo $blog['description'] ?></textarea>
                                     <span class="form-message"></span>
                                 </div>
                                 <input name="id" id="id" type="text" value="<?php echo $blog['id'] ?>" hidden />

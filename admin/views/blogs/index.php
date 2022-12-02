@@ -13,9 +13,8 @@
                                 <thead class="thead-light">
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Tiêu Đề</th>
+                                        <th scope="col" style="width: 300px ;">Tiêu Đề</th>
                                         <th scope="col" style="width: 100px ;">Ảnh</th>
-                                        <th scope="col" style="width: 700px;">Nội Dung</th>
                                         <th scope="col">Ngày Viết</th>
                                         <th scope="col">Actions</th>
 
@@ -36,21 +35,6 @@
 
                                                 <img style="min-width: 100px; height: 100px; " src="../upload/<?php echo $value['image'] ?>" class="img-thumbnail" alt="">
 
-                                            </td>
-                                            <td style="width: 600px;">
-                                                <p style="
-                                                display: block;
-                                                height: 16px*1.3*3;
-                                                font-size: 16px;
-                                                line-height: 1.3;
-                                                -webkit-line-clamp: 3;  /* số dòng hiển thị */
-                                                -webkit-box-orient: vertical;
-                                                overflow: hidden;
-                                                text-overflow: ellipsis;
-                                                margin-top:10px;
-                                                max-width: 600px;">
-                                                    <?php echo $value['description'] ?>
-                                                </p>
                                             </td>
                                             <td><?php echo $value['created_date'] ?></td>
 
